@@ -131,21 +131,21 @@
             }
             .btn:hover
             {
-                background:rgba(158, 157, 157);
+                background:rgb(158, 157, 157);
             }
             .bottomContainer
             {
                 top: 1330px;
                 position: absolute;
                 background: rgba(128,128,128, 0.8);
-                border-top: 2px solid rgba(150, 149, 149);
+                border-top: 2px solid rgb(150, 149, 149);
                 height: 7%;
                 width: 100%;
                 transition-duration: 0.5s;
             }
             .bottomContainer:hover
             {
-                background-color: rgba(68, 68, 68);
+                background-color: rgb(68, 68, 68);
                 opacity: 0.9;
             }
             .logo1
@@ -174,11 +174,11 @@
                 top: 10%;
                 left: 34%;
                 transition-duration: 0.5s;
-                border: 1px solid rgba(119, 118, 118);
+                border: 1px solid rgb(119, 118, 118);
             }
             .middleContainer:hover
             {
-                background-color: rgba(68, 68, 68);
+                background-color: rgb(68, 68, 68);
             }
             .headingContainer
             {
@@ -194,7 +194,7 @@
             }
             .headingContainer:hover
             {
-                background-color: rgba(155, 153, 153);
+                background-color: rgb(155, 153, 153);
             }
             #headingText
             {
@@ -218,7 +218,7 @@
             }
             .middleBody:hover
             {
-                background-color:rgba(155, 153, 153);
+                background-color:rgb(155, 153, 153);
             }
             #one
             {
@@ -352,6 +352,19 @@
                 }
             }
             */
+            .closeButton
+            {
+                display: none;
+            }
+            .middleButtonsContainer
+            {
+                position: absolute;
+                width: 40%;
+                height: 100%;
+                background-color: rgba(39, 37, 37, 0.8);
+                left: 102%;
+
+            }
         </style>
     </head>
     <body>
@@ -392,27 +405,31 @@
                 <div class="middleTextContainer" id="first">
                     <p id="middleContentText">Mondstadt</p>
                 </div>
+                <div class="middleButtonsContainer"></div>
             </div>
             <div id="two" class="middleBody">
                 <div class="middleContentImg" style="background-image: url('https://images.alphacoders.com/116/thumb-1920-1169181.jpg');"></div>
                 <div class="middleTextContainer" id="second">
                     <p id="middleContentText">Liyue</p>
                 </div>
+                <div class="middleButtonsContainer"></div>
             </div>
             <div id="three" class="middleBody">
                 <div class="middleContentImg" style="background-image: url('https://images7.alphacoders.com/118/thumb-1920-1189484.jpg');"></div>
                 <div class="middleTextContainer" id="third">
                     <p id="middleContentText">Inazuma</p>
                 </div>
+                <div class="middleButtonsContainer"></div>
             </div>
             <div class="middleLast">
                 <p id="middleLastText">More Information coming soon, stay tuned! ...</p>
             </div>
         </div>
         <div class="bottomContainer">
+            <!--
             <img class="logo1" src="https://upload.wikimedia.org/wikipedia/en/3/32/MiHoYo_Logo.png">
             <img class="logo2" src="https://uspto.report/TM/97185411/mark.png">
-
+            -->
         </div>
     </body>
 
