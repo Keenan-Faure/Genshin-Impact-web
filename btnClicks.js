@@ -23,6 +23,7 @@ click.addEventListener("click", () =>
 function showsContainer(id)
 {
     var container = document.getElementById(id);
+    container.style.opacity = '0';
     container.style.animation = 'fadeOut 0.5s ease-in forwards';
 }
 
