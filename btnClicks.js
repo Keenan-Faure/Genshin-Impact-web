@@ -23,19 +23,13 @@ click.addEventListener("click", () =>
 function showsContainer(id)
 {
     var container = document.getElementById(id);
-    console.log("First");
-    console.log(container);
     container.style.animation = 'fadeOut 0.5s ease-in forwards';
-    container.style.zIndex = "30";
-    container.style.display = 'block';
 }
 
 function removesContainer(id)
 {
+
     var container = document.getElementById(id);
-    console.log("SECOND");
-    console.log(container);
-    container.style.animation = "";
-    container.style.display = "none !important";
-    container.style.zIndex = '-30';
+    container.style.opacity = '1';
+    container.style.animation = "fadeIn 1s ease-out forwards";
 }

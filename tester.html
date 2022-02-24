@@ -338,7 +338,7 @@
             .splashFadeIn
             {
                 opacity: 1;
-                animation: fadeOut 1s ease-in forwards;
+                animation: fadeIn 1s ease-out forwards;
             }
             .closeButton
             {
@@ -361,9 +361,10 @@
             {
                 position: absolute;
                 opacity: 0;
-                display: none;
+                display: block;
                 width: 35%;
-                height: 98%;
+                height: 25%;
+                top: 5%;
                 background-color: rgba(231, 228, 228, 0.8);
                 left: 102%;
                 margin: 5px;
@@ -444,14 +445,16 @@
                 <div class="middleTextContainer" id="first">
                     <p id="middleContentText">Mondstadt</p>
                 </div>
-                <div class="middleButtonsContainer" id="ct1">
-                    <span class="closeButton" id="clsBtn" onclick="removesContainer('ct1')" title="Close">&times;</span><br>
-                    <a class="btnMiddle" id="a">Characters</a>
-                    <a class="btnMiddle" id="b">Characters</a>
-                    <a class="btnMiddle" id="c">Characters</a>
-                    <a class="btnMiddle" id="d">Characters</a>
-                </div>
             </div>
+
+            <div class="middleButtonsContainer" id="ct1">
+                <span class="closeButton" id="clsBtn" onclick="removesContainer('ct1')" title="Close">&times;</span><br>
+                <a class="btnMiddle" id="a">Characters</a>
+                <a class="btnMiddle" id="b">Characters</a>
+                <a class="btnMiddle" id="c">Characters</a>
+                <a class="btnMiddle" id="d">Characters</a>
+            </div>
+
             <div id="two" class="middleBody">
                 <div class="middleContentImg" style="background-image: url('https://images.alphacoders.com/116/thumb-1920-1169181.jpg');"></div>
                 <div class="middleTextContainer" id="second">
