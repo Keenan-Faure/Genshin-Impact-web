@@ -24,6 +24,7 @@ function showsContainer(id)
 {
     var container = document.getElementById(id);
     container.style.opacity = '0';
+    container.style.zIndex = '1';
     container.style.animation = 'fadeOut 0.5s ease-in forwards';
 }
 
@@ -32,5 +33,6 @@ function removesContainer(id)
 
     var container = document.getElementById(id);
     container.style.opacity = '1';
+    container.style.zIndex = '-1';
     container.style.animation = "fadeIn 1s ease-out forwards";
 }
