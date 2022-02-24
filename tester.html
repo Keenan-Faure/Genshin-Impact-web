@@ -364,10 +364,21 @@
                 display: block;
                 width: 35%;
                 height: 25%;
-                top: 5%;
                 background-color: rgba(231, 228, 228, 0.8);
                 left: 102%;
                 margin: 5px;
+            }
+            #ct1
+            {
+                top: 5%;
+            }
+            #ct2
+            {
+                top: 31%;
+            }
+            #ct3
+            {
+                top: 57%;
             }
             .btnMiddle
             {
@@ -440,35 +451,58 @@
             <div class="headingContainer">
                 <h1 id="headingText">Explore Genshin Impact</h1>
             </div>
+
+
+            <!--First Buttons Container-->
             <div id="one" class="middleBody" onclick="showsContainer('ct1')">
                 <div class="middleContentImg" style="background-image: url('https://images5.alphacoders.com/109/thumb-1920-1099191.jpg');"></div>
                 <div class="middleTextContainer" id="first">
                     <p id="middleContentText">Mondstadt</p>
                 </div>
             </div>
-
             <div class="middleButtonsContainer" id="ct1">
                 <span class="closeButton" id="clsBtn" onclick="removesContainer('ct1')" title="Close">&times;</span><br>
                 <a class="btnMiddle" id="a">Characters</a>
-                <a class="btnMiddle" id="b">Characters</a>
-                <a class="btnMiddle" id="c">Characters</a>
-                <a class="btnMiddle" id="d">Characters</a>
+                <a class="btnMiddle" id="b">Map</a>
+                <a class="btnMiddle" id="c">Monsters</a>
+                <a class="btnMiddle" id="d">Story Quest</a>
             </div>
 
-            <div id="two" class="middleBody">
+
+            <!--Second Buttons Container-->
+            <div id="two" class="middleBody" onclick="showsContainer('ct2')">
                 <div class="middleContentImg" style="background-image: url('https://images.alphacoders.com/116/thumb-1920-1169181.jpg');"></div>
                 <div class="middleTextContainer" id="second">
                     <p id="middleContentText">Liyue</p>
                 </div>
-                <div class="middleButtonsContainer"></div>
+                
             </div>
-            <div id="three" class="middleBody">
+            <div class="middleButtonsContainer" id="ct2">
+                <span class="closeButton" id="clsBtn" onclick="removesContainer('ct2')" title="Close">&times;</span><br>
+                <a class="btnMiddle" id="a">Characters</a>
+                <a class="btnMiddle" id="b">Map</a>
+                <a class="btnMiddle" id="c">Monsters</a>
+                <a class="btnMiddle" id="d">Story Quest</a>
+            </div>
+            
+
+            <!--Third Buttons Container-->
+            <div id="three" class="middleBody" onclick="showsContainer('ct3')">
                 <div class="middleContentImg" style="background-image: url('https://images7.alphacoders.com/118/thumb-1920-1189484.jpg');"></div>
                 <div class="middleTextContainer" id="third">
                     <p id="middleContentText">Inazuma</p>
                 </div>
-                <div class="middleButtonsContainer"></div>
+                
             </div>
+            <div class="middleButtonsContainer" id="ct3">
+                <span class="closeButton" id="clsBtn" onclick="removesContainer('ct3')" title="Close">&times;</span><br>
+                <a class="btnMiddle" id="a">Characters</a>
+                <a class="btnMiddle" id="b">Map</a>
+                <a class="btnMiddle" id="c">Monsters</a>
+                <a class="btnMiddle" id="d">Story Quest</a>
+            </div>
+
+
             <div class="middleLast">
                 <p id="middleLastText">More Information coming soon, stay tuned! ...</p>
             </div>
