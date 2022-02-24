@@ -1,6 +1,9 @@
 Upcoming Changes
 --
 
+version 1.1 (DONE)
+-- 
+
 - Adding buttons to the left part of each middle container. 
 
 ![image](https://user-images.githubusercontent.com/97687673/154657369-ffe1c981-cfeb-41be-b322-2e96ce002114.png)
