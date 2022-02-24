@@ -20,23 +20,22 @@ click.addEventListener("click", () =>
 });
 
 //gets elements from DOM
-var middleOne = document.getElementById('one');
-var middleTwo = document.getElementById('two');
-var middleThree = document.getElementById('three');
-var middleFour;
-
-//sets the onclick
-
-middleOne.addEventListener('click', (event) =>
+function showsContainer(id)
 {
-    
-    ct1.style.animation = 'fadeOut 0.5s ease-in forwards';
-});
+    var container = document.getElementById(id);
+    console.log("First");
+    console.log(container);
+    container.style.animation = 'fadeOut 0.5s ease-in forwards';
+    container.style.zIndex = "30";
+    container.style.display = 'block';
+}
 
-//clsBt
-var closeButton = document.getElementById('clsBtn');
-closeButton.addEventListener('click', (event) =>
+function removesContainer(id)
 {
-    ct1.style.display = 'none';
-    ct1.style.animation = 'none';
-});
+    var container = document.getElementById(id);
+    console.log("SECOND");
+    console.log(container);
+    container.style.animation = "";
+    container.style.display = "none !important";
+    container.style.zIndex = '-30';
+}
