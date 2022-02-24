@@ -213,6 +213,7 @@
                 margin: 5.5px 5.5px;
                 height: 25%;
                 left: 0;
+                cursor: pointer;
                 background: rgba(255,255,255,0.8);
                 transition-duration: 0.4s;
             }
@@ -341,38 +342,38 @@
             }
             .closeButton
             {
+                width: auto;
+                cursor: pointer;
+                background-color: rgb(167, 156, 156);
+                opacity: 0.9;
                 position: absolute;
                 right: 0;
-                top: 0;
-                color: red;
-                background-color: grey;
+                padding: 0px 2px;
+                margin-top: 1px;
+                margin-right: 1px;
+                transition-duration: 0.4s;
+            }
+            .closeButton:hover
+            {
+                background-color: red;
             }
             .middleButtonsContainer
             {
                 position: absolute;
-                width: 40%;
-                height: 25%;
+                opacity: 0;
+                display: none;
+                width: 35%;
+                height: 98%;
                 background-color: rgba(231, 228, 228, 0.8);
                 left: 102%;
                 margin: 5px;
-            }
-            #a
-            {
-                top: 5%;
-            }
-            #b
-            {
-                top: 31%;
-            }
-            #c
-            {
-                top: 57%;
             }
             .btnMiddle
             {
                 position: absolute;
                 background: rgba(56, 55, 55, 0.7);
                 color: black;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
                 text-shadow: 0 0 4px #c99393, 0 0 2px #8888bb;
                 cursor: pointer;
                 margin: 3px;
@@ -387,17 +388,21 @@
             {
                 background: rgba(39, 37, 37, 0.8);
             }
+            #a
+            {
+                top: 10%;
+            }
+            #b
+            {
+                top: 25%;
+            }
+            #c
+            {
+                top: 40%;
+            }
             #d
             {
-                top: 14%;
-            }
-            #e
-            {
-                top: 28%;
-            }
-            #f
-            {
-                top: 42%;
+                top: 55%;
             }
         </style>
     </head>
@@ -434,51 +439,33 @@
             <div class="headingContainer">
                 <h1 id="headingText">Explore Genshin Impact</h1>
             </div>
-
-
-            <div id="one" class="middleBody">
+            <div id="one" class="middleBody" onclick="showsContainer('ct1')">
                 <div class="middleContentImg" style="background-image: url('https://images5.alphacoders.com/109/thumb-1920-1099191.jpg');"></div>
                 <div class="middleTextContainer" id="first">
                     <p id="middleContentText">Mondstadt</p>
                 </div>
+                <div class="middleButtonsContainer" id="ct1">
+                    <span class="closeButton" id="clsBtn" onclick="removesContainer('ct1')" title="Close">&times;</span><br>
+                    <a class="btnMiddle" id="a">Characters</a>
+                    <a class="btnMiddle" id="b">Characters</a>
+                    <a class="btnMiddle" id="c">Characters</a>
+                    <a class="btnMiddle" id="d">Characters</a>
+                </div>
             </div>
-
-            <div class="middleButtonsContainer" id="a">
-                <span class="closeButton" id="clsBtn">&times;</span>
-                <a class="btnMiddle">Characters</a>
-                <a class="btnMiddle" id="d">Characters</a>
-                <a class="btnMiddle" id="e">Characters</a>
-                <a class="btnMiddle" id="f">Characters</a>
-            </div>
-
             <div id="two" class="middleBody">
                 <div class="middleContentImg" style="background-image: url('https://images.alphacoders.com/116/thumb-1920-1169181.jpg');"></div>
                 <div class="middleTextContainer" id="second">
                     <p id="middleContentText">Liyue</p>
                 </div>
+                <div class="middleButtonsContainer"></div>
             </div>
-
-            <div class="middleButtonsContainer" id="b">
-                <a class="btnMiddle">Characters</a>
-                <a class="btnMiddle" id="d">Characters</a>
-                <a class="btnMiddle" id="e">Characters</a>
-                <a class="btnMiddle" id="f">Characters</a>
-            </div>
-
             <div id="three" class="middleBody">
                 <div class="middleContentImg" style="background-image: url('https://images7.alphacoders.com/118/thumb-1920-1189484.jpg');"></div>
                 <div class="middleTextContainer" id="third">
                     <p id="middleContentText">Inazuma</p>
                 </div>
+                <div class="middleButtonsContainer"></div>
             </div>
-
-            <div class="middleButtonsContainer" id="c">
-                <a class="btnMiddle">Characters</a>
-                <a class="btnMiddle" id="d">Characters</a>
-                <a class="btnMiddle" id="e">Characters</a>
-                <a class="btnMiddle" id="f">Characters</a>
-            </div>
-
             <div class="middleLast">
                 <p id="middleLastText">More Information coming soon, stay tuned! ...</p>
             </div>
@@ -491,84 +478,7 @@
         </div>
     </body>
 
-    <script>
-        var slideIndex = 0;
-        function showSlides()
-        {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            for(i = 0; i < slides.length; ++i)
-            {
-                slides[i].style.display = "none";
-            }
-            ++ slideIndex;
-            if(slideIndex > slides.length)
-            {
-                slideIndex = 1;
-            }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 7000); 
-        }
-        showSlides();
-    </script>
-    <script>
-
-        var splash = document.querySelector('.splash');
-        window.addEventListener('load', (event) =>
-        {
-            setTimeout(()=>
-            {
-                splash.style.animation = "fadeIn 1s ease-out forwards";
-            },3000);
-            setTimeout(()=>
-            {
-                splash.classList.add('display-none');
-            },5000);
-        });
-        setTimeout(() =>
-        {
-            var btn1 = document.getElementById('btn1');
-            var btn2 = document.getElementById('btn2');
-            var btn3 = document.getElementById('btn3');
-            var btn4 = document.getElementById('btn4');
-            setTimeout(() =>
-            {
-                btn1.style.animation = "fadeOut 1s ease-out forwards";
-            },500);
-            setTimeout(() =>
-            {
-                btn2.style.animation = "fadeOut 1s ease-out forwards";
-            },750);
-            setTimeout(() =>
-            {
-                btn4.style.animation = "fadeOut 1s ease-out forwards";
-            },1000);
-            setTimeout(() =>
-            {
-                btn3.style.animation = "fadeOut 1s ease-out forwards";
-            },1250);
-        },5000);
-    </script>
-    <script>
-        var click = document.getElementById('btn1');
-        click.addEventListener("click", () =>
-        {
-            alert('You are clicking button one');
-        });
-        var click = document.getElementById('btn2');
-        click.addEventListener("click", () =>
-        {
-            alert('You are clicking button two');
-        });
-        var click = document.getElementById('btn3');
-        click.addEventListener("click", () =>
-        {
-            alert('You are clicking button four');
-        });
-        var click = document.getElementById('btn4');
-        click.addEventListener("click", () =>
-        {
-            alert('You are clicking button three');
-        });
-    </script>
+    <script src="slide.js"></script>
+    <script src="splash.js"></script>
+    <script src="btnClicks.js"></script>
 </html>
