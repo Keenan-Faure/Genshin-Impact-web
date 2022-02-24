@@ -1,7 +1,6 @@
 <html>
     <head>
         <style>
-            This is something I added to test hehe
             body
             {
                 margin: 0;
@@ -342,16 +341,32 @@
             }
             .closeButton
             {
-                display: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+                color: red;
+                background-color: grey;
             }
             .middleButtonsContainer
             {
                 position: absolute;
                 width: 40%;
-                height: 100%;
+                height: 25%;
                 background-color: rgba(231, 228, 228, 0.8);
                 left: 102%;
                 margin: 5px;
+            }
+            #a
+            {
+                top: 5%;
+            }
+            #b
+            {
+                top: 31%;
+            }
+            #c
+            {
+                top: 57%;
             }
             .btnMiddle
             {
@@ -371,6 +386,18 @@
             .btnMiddle:hover
             {
                 background: rgba(39, 37, 37, 0.8);
+            }
+            #d
+            {
+                top: 14%;
+            }
+            #e
+            {
+                top: 28%;
+            }
+            #f
+            {
+                top: 42%;
             }
         </style>
     </head>
@@ -407,29 +434,51 @@
             <div class="headingContainer">
                 <h1 id="headingText">Explore Genshin Impact</h1>
             </div>
+
+
             <div id="one" class="middleBody">
                 <div class="middleContentImg" style="background-image: url('https://images5.alphacoders.com/109/thumb-1920-1099191.jpg');"></div>
                 <div class="middleTextContainer" id="first">
                     <p id="middleContentText">Mondstadt</p>
                 </div>
-                <div class="middleButtonsContainer">
-                    <a class="btnMiddle">Characters</a>
-                </div>
             </div>
+
+            <div class="middleButtonsContainer" id="a">
+                <span class="closeButton" id="clsBtn">&times;</span>
+                <a class="btnMiddle">Characters</a>
+                <a class="btnMiddle" id="d">Characters</a>
+                <a class="btnMiddle" id="e">Characters</a>
+                <a class="btnMiddle" id="f">Characters</a>
+            </div>
+
             <div id="two" class="middleBody">
                 <div class="middleContentImg" style="background-image: url('https://images.alphacoders.com/116/thumb-1920-1169181.jpg');"></div>
                 <div class="middleTextContainer" id="second">
                     <p id="middleContentText">Liyue</p>
                 </div>
-                <div class="middleButtonsContainer"></div>
             </div>
+
+            <div class="middleButtonsContainer" id="b">
+                <a class="btnMiddle">Characters</a>
+                <a class="btnMiddle" id="d">Characters</a>
+                <a class="btnMiddle" id="e">Characters</a>
+                <a class="btnMiddle" id="f">Characters</a>
+            </div>
+
             <div id="three" class="middleBody">
                 <div class="middleContentImg" style="background-image: url('https://images7.alphacoders.com/118/thumb-1920-1189484.jpg');"></div>
                 <div class="middleTextContainer" id="third">
                     <p id="middleContentText">Inazuma</p>
                 </div>
-                <div class="middleButtonsContainer"></div>
             </div>
+
+            <div class="middleButtonsContainer" id="c">
+                <a class="btnMiddle">Characters</a>
+                <a class="btnMiddle" id="d">Characters</a>
+                <a class="btnMiddle" id="e">Characters</a>
+                <a class="btnMiddle" id="f">Characters</a>
+            </div>
+
             <div class="middleLast">
                 <p id="middleLastText">More Information coming soon, stay tuned! ...</p>
             </div>
