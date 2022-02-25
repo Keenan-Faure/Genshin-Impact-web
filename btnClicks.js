@@ -33,7 +33,7 @@ function removesContainer(id)
 
     var container = document.getElementById(id);
     container.style.opacity = '1';
-    container.style.animation = "fadeIn 1s ease-out forwards";
+    container.style.animation = "fadeIn 0.5s ease-out forwards";
     setTimeout(()=>
     {
         container.style.zIndex = '-1';
