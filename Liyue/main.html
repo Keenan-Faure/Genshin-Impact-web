@@ -4,17 +4,8 @@
             body
             {
                 margin: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-
-            .splash
-            {
-                width: 100%;
-                float: left;
-                position: relative;
-                background: #000000;
                 overflow: hidden;
-                height: 100%;
+                font-family: Arial, Helvetica, sans-serif;
             }
             .splash
             {
@@ -22,21 +13,22 @@
                 content: "";
                 display: inline-block;
                 height: 100%;
+                overflow: hidden;
                 opacity: 1;
                 position: absolute;
                 top: 0;
                 width: 100%;
                 z-index: 10;
-                animation: 30s ease 0s normal none infinite running zoomin;
-                -webkit-animation: 30s ease 0s normal none infinite running zoomin;
-                -o-animation: 30s ease 0s normal none infinite running zoomin;
-                -moz--o-animation: 30s ease 0s normal none infinite running zoomin;
+                animation: 13s ease 0s normal none infinite running zoomin;
+                -webkit-animation: 13s ease 0s normal none infinite running zoomin;
+                -o-animation: 13s ease 0s normal none infinite running zoomin;
+                -moz--o-animation: 13s ease 0s normal none infinite running zoomin;
             }
             @keyframes zoomin 
             {
                 0% { transform: scale(1.2, 1.2) }
-                50% { transform: scale(0.905, 0.905) }
-                100% { transform: scale(1 ,1) }
+                50% { transform: scale(1, 1) }
+                100% { transform: scale(0.0 ,0.0) }
             }
             
             @keyframes fadeOut
