@@ -11,5 +11,5 @@ window.addEventListener('load', (event) =>
         {
             splash.style.zIndex = "-1";
         },1000);
-    },6000);
+    },4500);
 });
