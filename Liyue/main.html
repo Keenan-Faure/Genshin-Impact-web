@@ -72,12 +72,17 @@
                 width: 100%;
                 height: 100%;
             }
-            
+            .liyueImage
+            {
+                
+            }
             /* Keqing */
             .columnOne
             {
                 background-position: center;
-                background-image: url('https://wallpapercave.com/wp/wp7921141.jpg');
+                background-color: black;
+                opacity: 0.;
+                background-image: url('https://wallpapercave.com/wp/wp8022929.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: absolute;
@@ -91,8 +96,11 @@
             {
                 background-image: url('https://assets2.rockpapershotgun.com/keqing-character-demo/BROK/thumbnail/1200x1200/quality/100/keqing-character-demo');
                 width: 21%;
+                opacity: 1;
                 border: 1px solid black;
             }
+
+            /* Map */
             .columnTwo
             {
                 background-position: center;
@@ -112,10 +120,12 @@
                 width: 21%;
                 border: 1px solid black;
             }
+
+            /* Bosses */
             .columnThree
             {
                 background-position: center;
-                background-image: url('https://wallpapercave.com/wp/wp7921141.jpg');
+                background-image: url('https://drive.google.com/u/1/uc?id=1nzfuTxcDX4JWaVULhodylWeuFr82MQ4Z&export=download');
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: absolute;
@@ -127,7 +137,7 @@
             }
             .columnThree:hover
             {
-                background-image: url('https://assets2.rockpapershotgun.com/keqing-character-demo/BROK/thumbnail/1200x1200/quality/100/keqing-character-demo');
+                background-image: url('https://images3.alphacoders.com/114/thumb-1920-1146249.jpg');
                 width: 21%;
                 border: 1px solid black;
             }
@@ -139,7 +149,37 @@
                 margin-left: 50px;
                 bottom: 5%;
             }
-
+            .textContainer
+            {
+                width: 80%;
+                height: 7%;
+                position: absolute;
+                left: 10%;
+                top: 44%;
+                background: rgba(0,0,0,0.91);
+                border-left: 1px solid white;
+                transition-duration: 0.5s;
+            }
+            #two:hover
+            {
+                background: rgba(94, 180, 101, 0.93);
+            }
+            #three:hover
+            {
+                background: rgba(94, 156, 180, 0.93);
+            }
+            #text
+            {
+                color: white;
+                margin-top: 15px;
+                font-family:Arial, Helvetica, sans-serif;
+                text-align: center;
+                font-size: 30px;
+            }
+            .textContainer:hover
+            {
+                background: rgba(70, 20, 70, 0.93);
+            }
         </style>
     </head>
     <body>
@@ -148,13 +188,19 @@
         
         <div class="background">
             <div class="columnOne">
-                <img id="centerImage" src="https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download">
+                <div class="textContainer">
+                    <p id="text">Characters</p>
+                </div>
             </div>
             <div class="columnTwo">
-
+                <div class="textContainer" id="two">
+                    <p id="text">Map</p>
+                </div>
             </div>
             <div class="columnThree">
-
+                <div class="textContainer" id="three">
+                    <p id="text">Bosses</p>
+                </div>
             </div>
         </div>
     </body>
