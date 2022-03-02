@@ -26,6 +26,6 @@ window.addEventListener('load', (event) =>
             splash.style.zIndex = "-1";
         },1000);
     },5000);
-    //The setTimeout method is directly proportional to the animation seconds
+    //The setTimeout method above is directly proportional to the animation seconds
     //the perfect value for this time is: 5000ms:11s
 });
