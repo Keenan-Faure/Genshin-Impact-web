@@ -28,4 +28,24 @@ window.addEventListener('load', (event) =>
     },5000);
     //The setTimeout method above is directly proportional to the animation seconds
     //the perfect value for this time is: 5000ms:11s
+
+    setTimeout(()=>
+    {
+        var text1 = document.querySelector('.textContainer');
+        var text2 = document.querySelector('.textContainerTwo');
+        var text3 = document.querySelector('.textContainerThree');
+
+        setTimeout(() =>
+        {
+            text1.style.animation = "fadeIn 1s ease-out forwards";
+        },500);
+        setTimeout(() =>
+        {
+            text2.style.animation = "fadeIn 1s ease-out forwards";
+        },750);
+        setTimeout(() =>
+        {
+            text3.style.animation = "fadeIn 1s ease-out forwards";
+        },1000);
+    },6200)
 });

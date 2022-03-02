@@ -48,7 +48,13 @@
                 50% { transform: scale(1, 1) }
                 100% { transform: scale(0.0 ,0.0) }
             }
-            
+            @keyframes fadeIn
+            {
+                to
+                {
+                    opacity: 1;
+                }
+            }
             @keyframes fadeOut
             {
                 to
@@ -74,7 +80,7 @@
             }
             .liyueImage
             {
-                
+                /* Blank */
             }
             /* Keqing */
             .columnOne
@@ -152,6 +158,7 @@
             .textContainer
             {
                 width: 80%;
+                opacity: 0;
                 height: 7%;
                 position: absolute;
                 left: 10%;
@@ -160,11 +167,41 @@
                 border-left: 1px solid white;
                 transition-duration: 0.5s;
             }
-            #two:hover
+            .textContainer:hover
+            {
+                background: rgba(70, 20, 70, 0.93);
+            }
+
+            .textContainerTwo
+            {
+                width: 80%;
+                opacity: 0;
+                height: 7%;
+                position: absolute;
+                left: 10%;
+                top: 44%;
+                background: rgba(0,0,0,0.91);
+                border-left: 1px solid white;
+                transition-duration: 0.5s;
+            }
+            .textContainerTwo:hover
             {
                 background: rgba(94, 180, 101, 0.93);
             }
-            #three:hover
+
+            .textContainerThree
+            {
+                width: 80%;
+                opacity: 0;
+                height: 7%;
+                position: absolute;
+                left: 10%;
+                top: 44%;
+                background: rgba(0,0,0,0.91);
+                border-left: 1px solid white;
+                transition-duration: 0.5s;
+            }
+            .textContainerThree:hover
             {
                 background: rgba(94, 156, 180, 0.93);
             }
@@ -176,10 +213,7 @@
                 text-align: center;
                 font-size: 30px;
             }
-            .textContainer:hover
-            {
-                background: rgba(70, 20, 70, 0.93);
-            }
+ 
         </style>
     </head>
     <body>
@@ -188,17 +222,18 @@
         
         <div class="background">
             <div class="columnOne">
+                <img id="centerImage" src="https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download">
                 <div class="textContainer">
                     <p id="text">Characters</p>
                 </div>
             </div>
             <div class="columnTwo">
-                <div class="textContainer" id="two">
+                <div class="textContainerTwo" id="two">
                     <p id="text">Map</p>
                 </div>
             </div>
             <div class="columnThree">
-                <div class="textContainer" id="three">
+                <div class="textContainerThree" id="three">
                     <p id="text">Bosses</p>
                 </div>
             </div>
