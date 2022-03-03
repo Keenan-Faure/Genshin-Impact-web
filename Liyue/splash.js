@@ -34,6 +34,7 @@ window.addEventListener('load', (event) =>
         var text1 = document.querySelector('.textContainer');
         var text2 = document.querySelector('.textContainerTwo');
         var text3 = document.querySelector('.textContainerThree');
+        var textLast = document.querySelector('.liyueText');
 
         setTimeout(() =>
         {
@@ -47,5 +48,9 @@ window.addEventListener('load', (event) =>
         {
             text3.style.animation = "fadeIn 1s ease-out forwards";
         },1000);
+        setTimeout(()=>
+        {
+            textLast.style.animation = "fadeIn 1s ease-out forwards";
+        },1400)
     },6200)
 });

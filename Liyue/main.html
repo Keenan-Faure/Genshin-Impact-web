@@ -91,6 +91,23 @@
                 left: 8%;
                 background-image: url('https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download');
             }
+            .liyueText
+            {
+                width: 80%;
+                opacity: 0;
+                height: 15%;
+                position: absolute;
+                left: 10%;
+                top: 80%;
+                background: rgba(0,0,0,0.91);
+                border-left: 1px solid white;
+                transition-duration: 0.5s;
+            }
+            .liyueText:hover
+            {
+                background: rgba(218, 145, 51, 0.91);
+            }
+
             /* Keqing */
             .columnOne
             {
@@ -232,7 +249,9 @@
         
         <div class="background">
             <div class="liyueImage">
-
+                <div class="liyueText">
+                    <p id="text">Liyue Harbor</p>
+                </div>
             </div>
             <div class="columnOne">
                 <img id="centerImage" src="https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download">
