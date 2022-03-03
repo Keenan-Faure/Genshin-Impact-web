@@ -78,10 +78,24 @@
                 width: 100%;
                 height: 100%;
             }
-            .liyueImage
+            .liyueImageBackgroundSlide
             {
                 position: absolute;
                 background: rgba(58, 57, 57, 0.91);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border: 2px solid orange;
+                width: 25%;
+                height: 40%;
+                top: 30%;
+                left: 8%;
+                background-image: url('https://img.gamerjournalist.com/spai/q_lossy+ret_img+to_webp/https://cdn.gamerjournalist.com/primary/2021/01/Liyue-Harbor-Genshin-Impact-1024x576.jpg');
+            }
+            .liyueImage
+            {
+                position: absolute;
+                background: rgba(0,0,0,0.6);
                 background-position: center;
                 background-repeat: no-repeat;
                 border: 2px solid orange;
@@ -258,6 +272,9 @@
         </div>
         
         <div class="background">
+            <div class="liyueImageBackgroundSlide">
+
+            </div>
             <div class="liyueImage">
                 <div class="liyueText">
                     <p id="texts">Liyue Harbor</p>
