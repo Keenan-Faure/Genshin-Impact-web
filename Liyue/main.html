@@ -147,10 +147,11 @@
             .sloganContainer
             {
                 position: absolute;
+                border: 1px solid orange;
                 width: 23%;
                 height: 12%;
                 left: 9%;
-                top: 75%;
+                top: 73%;
                 background: rgba(0,0,0,0.6);
             }
             /* Keqing */
@@ -233,7 +234,7 @@
                 width: 80%;
                 cursor: pointer;
                 opacity: 0;
-                height: 7%;
+                height: 5%;
                 position: absolute;
                 left: 10%;
                 top: 44%;
@@ -252,7 +253,7 @@
                 width: 80%;
                 opacity: 0;
                 cursor: pointer;
-                height: 7%;
+                height: 5%;
                 position: absolute;
                 left: 10%;
                 top: 44%;
@@ -270,7 +271,7 @@
                 width: 80%;
                 cursor: pointer;
                 opacity: 0;
-                height: 7%;
+                height: 5%;
                 position: absolute;
                 left: 10%;
                 top: 44%;
@@ -285,13 +286,28 @@
             #text
             {
                 color: white;
-                margin-top: 15px;
+                
                 font-family:Arial, Helvetica, sans-serif;
                 text-align: center;
                 font-size: 30px;
             }
 
- 
+            @media screen and (max-width: 1600px)
+            {
+                .sloganContainer
+                {
+                    height: 17%;
+                }
+            }
+
+            @media screen and (max-width: 800px)
+            {
+                .sloganContainer
+                {
+                    height: 26%;
+                }
+            }
+            
         </style>
     </head>
     <body>
@@ -316,7 +332,6 @@
                 </p>
             </div>
             <div class="columnOne">
-                <img id="centerImage" src="https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download">
                 <div class="textContainer">
                     <p id="text">Characters</p>
                 </div>
