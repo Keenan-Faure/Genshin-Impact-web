@@ -283,13 +283,17 @@
             {
                 background: rgba(94, 156, 180, 0.93);
             }
+            .paragraph
+            {
+                font-size: 30px;
+            }
+
             #text
             {
+                margin:7px; 
+                text-align: center; 
+                font-size: 30px; 
                 color: white;
-                
-                font-family:Arial, Helvetica, sans-serif;
-                text-align: center;
-                font-size: 30px;
             }
 
             @media screen and (max-width: 1600px)
@@ -298,16 +302,39 @@
                 {
                     height: 17%;
                 }
+                .paragraph
+                {
+                    margin-top: 8px;
+                    font-size: 25px;
+                }
             }
 
-            @media screen and (max-width: 800px)
+            @media screen and (max-width: 1140px)
             {
                 .sloganContainer
                 {
-                    height: 26%;
+                    height: 19%;
+                }
+                .paragraph
+                {
+                    font-size: 20px;
+                    margin-top: 11px;
                 }
             }
             
+            @media screen and (max-width: 990px)
+            {
+                .sloganContainer
+                {
+                    height: 24%;
+                }
+                #text
+                {
+                    font-size: 20px;
+                    margin-top: 11px;
+                }
+            }
+
         </style>
     </head>
     <body>
