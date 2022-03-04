@@ -18,7 +18,7 @@ window.addEventListener('load', (event) =>
     //creates splashText
     var SplashText = document.createElement('p');
     SplashText.className = "splashText";
-    var text = document.createTextNode("Will we meet again...");
+    var text = document.createTextNode("Until we meet again...");
     SplashText.appendChild(text);
     Splash1.appendChild(SplashText);
 
