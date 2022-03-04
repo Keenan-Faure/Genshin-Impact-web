@@ -12,7 +12,7 @@ version 1.1 (DONE)
 - The colors will be grey fading into white.
 
 
-version 1.2
+version 1.2 (DONE)
 --
 
 - Adding images to the space below the buttons after opening the middleButtonsContainer
@@ -28,7 +28,16 @@ version 1.2
 
 ![image](https://user-images.githubusercontent.com/97687673/155539309-34015a9a-6661-40d8-9929-e1630d369cd8.png)
 
-More changes coming soon...
+
+version 2.0
+--
+
+- Create a main.html for the various cities: Mondstadt, Liyue and Inazuma (with the same template)
+- Link all three pages to the main page (tester.html)
+
+- Create a better splash screen for those set of pages, with a zoom-in effect + fade-in/fade-out effect.
+
+- More updates Inc...
 
 
 
