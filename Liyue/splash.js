@@ -14,6 +14,14 @@ window.addEventListener('load', (event) =>
     //creates splash screen...
     var Splash1 = document.createElement('div');
     Splash1.className = 'splash';
+
+    //creates splashText
+    var SplashText = document.createElement('p');
+    SplashText.className = "splashText";
+    var text = document.createTextNode("Will we meet again...");
+    SplashText.appendChild(text);
+    Splash1.appendChild(SplashText);
+
     document.body.appendChild(Splash1);
     setTimeout(()=>
     {
