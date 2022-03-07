@@ -1,3 +1,16 @@
+var contain1 = document.getElementById('contain1');
+contain1.addEventListener('mousedown', (event) =>
+{
+    var image = document.createElement('img');
+    image.src = 'https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download';
+    image.style.animation = 'fadeIn 0.3s ease-in forwards'; //make it fade-in quick
+    image.id = 'image';
+    image.className = 'btnImage';
+
+    contain1.appendChild(image);
+    console.log(image);
+});
+
 function createElement(parentId)
 {
     var image = document.createElement('img');
