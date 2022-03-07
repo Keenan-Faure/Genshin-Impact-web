@@ -10,7 +10,7 @@ window.addEventListener('load', (event) =>
             splash0.classList.add('display-none');
         },1500);
 
-    }, 3500);
+    }, 2500);
     //creates splash screen...
     var Splash1 = document.createElement('div');
     Splash1.className = 'splash';
