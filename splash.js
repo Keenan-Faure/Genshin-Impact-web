@@ -20,6 +20,10 @@ window.addEventListener('load', (event) =>
     },1000);
     setTimeout(()=>
     {
+        setTimeout(() =>
+        {
+            splash.classList.add('display-none');
+        },1000)
         setTimeout(()=>
         {
             var btn1 = document.getElementById('btn1');
