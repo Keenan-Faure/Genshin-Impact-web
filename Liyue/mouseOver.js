@@ -39,3 +39,37 @@ if(count == 1)
         contain3.appendChild(image);
     });
 }
+
+
+contain1.addEventListener('mouseout', (event) =>
+{
+    var images = document.getElementsByClassName('btnImage');
+    for(i = 0; i < images.length; ++i)
+    {
+        images[i].style.opacity = '1';
+        images[i].style.animation = 'fadeOut 1s ease-out forwards';
+        count = 1;
+    }
+});
+
+contain2.addEventListener('mouseout', (event) =>
+{
+    var images = document.getElementsByClassName('btnImage2');
+    for(i = 0; i < images.length; ++i)
+    {
+        images[i].style.opacity = '1';
+        images[i].style.animation = 'fadeOut 1s ease-out forwards';
+        count = 1;
+    }
+});
+
+contain3.addEventListener('mouseout', (event) =>
+{
+    var images = document.getElementsByClassName('btnImage3');
+    for(i = 0; i < images.length; ++i)
+    {
+        images[i].style.opacity = '1';
+        images[i].style.animation = 'fadeOut 1s ease-out forwards';
+        count = 1;
+    }
+});
