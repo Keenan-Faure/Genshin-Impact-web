@@ -1,44 +1,27 @@
+//gets containers
 var contain1 = document.getElementById('contain1');
 var contain2 = document.getElementById('contain2');
 var contain3 = document.getElementById('contain3');
-var count = 1;
 
-if(count == 1)
+//gets images
+var image1 = document.getElementById('image1');
+var image2 = document.getElementById('image2');
+var image3 = document.getElementById('image3');
+
+contain1.addEventListener('mouseover', (event) =>
 {
-    count++;
-    contain1.addEventListener('mouseover', (event) =>
-    {
-        var image = document.createElement('img');
-        image.src = 'https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download';
-        image.style.animation = 'fadeIn 1s ease-out forwards'; //make it fade-in quick
-        image.id = 'image';
-        image.className = 'btnImage';
+    image1.style.animation = 'fadeIn 1s ease-out forwards'; //make it fade-in quick
+});
 
-        contain1.appendChild(image);
-    });
+contain2.addEventListener('mouseover', (event) =>
+{
+    image2.style.animation = 'fadeIn 1s ease-out forwards'; //make it fade-in quick
+});
 
-    contain2.addEventListener('mouseover', (event) =>
-    {
-        var image = document.createElement('img');
-        image.src = 'https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download';
-        image.style.animation = 'fadeIn 1s ease-out forwards'; //make it fade-in quick
-        image.id = 'image';
-        image.className = 'btnImage2';
-
-        contain2.appendChild(image);
-    });
-
-    contain3.addEventListener('mouseover', (event) =>
-    {
-        var image = document.createElement('img');
-        image.src = 'https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download';
-        image.style.animation = 'fadeIn 1s ease-out forwards'; //make it fade-in quick
-        image.id = 'image';
-        image.className = 'btnImage3';
-
-        contain3.appendChild(image);
-    });
-}
+contain3.addEventListener('mouseover', (event) =>
+{
+    image3.style.animation = 'fadeIn 1s ease-out forwards'; //make it fade-in quick
+});
 
 
 contain1.addEventListener('mouseout', (event) =>
@@ -48,7 +31,6 @@ contain1.addEventListener('mouseout', (event) =>
     {
         images[i].style.opacity = '1';
         images[i].style.animation = 'fadeOut 1s ease-out forwards';
-        count = 1;
     }
 });
 
@@ -59,7 +41,7 @@ contain2.addEventListener('mouseout', (event) =>
     {
         images[i].style.opacity = '1';
         images[i].style.animation = 'fadeOut 1s ease-out forwards';
-        count = 1;
+        count1 = 1;
     }
 });
 
@@ -70,6 +52,6 @@ contain3.addEventListener('mouseout', (event) =>
     {
         images[i].style.opacity = '1';
         images[i].style.animation = 'fadeOut 1s ease-out forwards';
-        count = 1;
+        count1 = 1;
     }
 });
