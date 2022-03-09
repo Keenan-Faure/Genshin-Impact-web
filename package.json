@@ -1,0 +1,23 @@
+{
+  "name": "genshin-impact-web",
+  "version": "1.0.0",
+  "description": "What is Genshin-Impact-web? -- - It is a personalized webpage that was created with Genshin Impact in mind. - There is nothing that can be done on this webpage, because it was created on a whim...",
+  "main": "btnClicks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keenan-Faure/Genshin-Impact-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keenan-Faure/Genshin-Impact-web/issues"
+  },
+  "homepage": "https://github.com/Keenan-Faure/Genshin-Impact-web#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
