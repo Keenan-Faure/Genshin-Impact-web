@@ -13,7 +13,6 @@ window.addEventListener('load', (event) =>
 
         setTimeout(()=>
         {
-            console.log("I am here");
             splash.style.animation = "fadeIn 1s ease-out forwards"
         },4000);
         
