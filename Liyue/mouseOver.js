@@ -55,3 +55,16 @@ contain3.addEventListener('mouseout', (event) =>
         count1 = 1;
     }
 });
+
+var column1 = document.querySelector('.columnOne');
+var column2 = document.querySelector('.columnTwo');
+var column3 = document.querySelector('.columnThree');
+
+column1.addEventListener('mouseover', (event)=>
+{
+    var darkBack = document.querySelector('.darkBack');
+    darkBack.style.zIndex = '1';
+    darkBack.style.animation = 'fadeIn 1s ease-out forwards';
+    column1.style.animation = 'fadeUp 1s ease-out forwards';
+    
+});

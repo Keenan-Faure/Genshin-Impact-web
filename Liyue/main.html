@@ -226,15 +226,38 @@
                 top: 73%;
                 background: rgba(0,0,0,0.6);
             }
+
+            /*Darkend background*/
+            .darkBack
+            {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.75);
+                z-index: -1;
+                opacity: 0;
+            }
+            @keyframes fadeUp
+            {
+                to
+                {
+                    z-index: 10;
+                }
+            }
+            .fade-up
+            {
+                z-index: 1;
+                animation: "fadeUp 1s ease-out forwards";
+            }
             /* Keqing */
             .columnOne
             {
                 background-position: center;
                 background-color: black;
-                opacity: 0.;
                 background-image: url('https://wallpapercave.com/wp/wp8022929.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
+                z-index: 1;
                 position: absolute;
                 width: 20%;
                 height: 100%;
@@ -426,7 +449,9 @@
     <body>
         <div class="splash0">
         </div>
-        
+        <div class="darkBack">
+
+        </div>
         <div class="background">
             <div class="containerNavigation">
                 <div class="contain" id="contain1">
