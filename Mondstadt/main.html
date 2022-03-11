@@ -1,0 +1,522 @@
+<html>
+    <head>
+    <link rel="icon" href="https://preview.redd.it/fi4oa3o2w7t51.png?auto=webp&s=89f13a8454a198909a57288b40c277e4eb677524" type="image/ico">
+        <style>
+            body
+            {
+                margin: 0;
+                overflow: hidden;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body::after
+            {
+                display: none;
+                content: url('https://assets2.rockpapershotgun.com/keqing-character-demo/BROK/thumbnail/1200x1200/quality/100/keqing-character-demo') url('https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/10/Liyue-Statue-of-Seven-Locations-Genshin-Impact.jpg') url('https://images3.alphacoders.com/114/thumb-1920-1146249.jpg');
+            }
+            .containerNavigation
+            {
+                position: absolute;
+                left: 11%;
+                top: 3%;
+                height: 20%;
+                width: 20%;
+                border: 1px solid rgb(0, 255, 136);
+                margin: auto;
+                background: rgba(0,0,0,0.6);
+            }
+            .contain
+            {
+                position: absolute;
+                width: 98%;
+                height: 25%;
+                left: 1%;
+                text-align: left;
+                color: rgb(0, 0, 0);
+                font-size: 15px;
+                transition-duration: 1s;
+            }
+            #contain1{ top: 5%; }
+            #contain2{ top: 38%; }
+            #contain3{ top: 69%; }
+            .contain:hover
+            {
+                background: rgba(131, 179, 91, 0.91);
+            }
+            .containText
+            {
+                margin-left: 10px;
+                text-align: center; 
+                font-size: 15px; 
+                color: black;
+            }
+            .btnImage
+            {
+                top: -10%;
+                left: 0%;
+                width: 50px; 
+                height: 50px;
+                position: absolute;
+                display: block;
+                opacity: 0;
+                
+            }
+            .btnImage2
+            {
+                top: 0%;
+                left: 0%;
+                width: 50px; 
+                height: 50px;
+                position: absolute;
+                display: block;
+                opacity: 0;
+            }
+            
+            .btnImage3
+            {
+                top: 0%;
+                left: 0%;
+                width: 50px; 
+                height: 50px;
+                position: absolute;
+                display: block;
+                opacity: 0;
+            }
+            .splash0
+            {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 11;
+                background-color: black;
+            }
+            .splash0.display-none
+            {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: -11;
+                opacity: 0;
+                transition-duration: all 0.5s;
+            }
+            .splash
+            {
+                background: url(https://images8.alphacoders.com/112/1129503.jpg) no-repeat center;
+                content: "";
+                display: inline-block;
+                height: 100%;
+                overflow: hidden;
+                opacity: 1;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 10;
+                animation: 11s ease 0s normal none infinite running zoomin;
+                -webkit-animation: 11s ease 0s normal none infinite running zoomin;
+                -o-animation: 17s ease 0s normal none infinite running zoomin;
+                
+            }
+            .splashText
+            {
+                top: 85%;
+                animation: "fadeOut 2s ease-in forwards";
+                position: absolute;
+                left: 43%;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgb(209, 209, 209);
+                text-shadow: 0 0 4px #000000, 0 0 2px #000000;
+                font-size: 35px;
+            }
+            @keyframes zoomin 
+            {
+                0% { transform: scale(1.1, 1.1) }
+                50% { transform: scale(1, 1) }
+                100% { transform: scale(0.0 ,0.0) }
+            }
+            @keyframes fadeIn
+            {
+                to
+                {
+                    opacity: 1;
+                }
+            }
+            @keyframes fadeOut
+            {
+                to
+                {
+                    opacity: 0;
+                }
+            }
+            .fade-out
+            {
+                opacity: 1;
+                animation: "fadeOut 1s ease-out forwards";
+            }
+            .fade-in
+            {
+                opacity: 0;
+                animation: "fadeIn 1s ease-in forwards";
+            }
+            .background
+            {
+                position: fixed;
+                background-image: url('https://wallpapercave.com/wp/wp8657180.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+            }
+            .liyueImageBackgroundSlide
+            {
+                position: absolute;
+                background: rgba(58, 57, 57, 0.91);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border: 2px solid rgb(0, 255, 136);
+                width: 25%;
+                height: 40%;
+                top: 30%;
+                left: 8%;
+                background-image: url('https://img.gamerjournalist.com/spai/q_lossy+ret_img+to_webp/https://cdn.gamerjournalist.com/primary/2021/01/Liyue-Harbor-Genshin-Impact-1024x576.jpg');
+            }
+            .liyueImage
+            {
+                position: absolute;
+                background: rgba(0,0,0,0.6);
+                background-position: center;
+                background-repeat: no-repeat;
+                border: 2px solid rgb(0, 255, 136);
+                width: 25%;
+                height: 40%;
+                top: 30%;
+                left: 8%;
+                background-image: url('https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download');
+            }
+            .liyueText
+            {
+                width: 80%;
+                cursor: pointer;
+                opacity: 0;
+                height: 15%;
+                position: absolute;
+                left: 10%;
+                top: 83%;
+                background: rgba(0,0,0,0.91);
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+                transition-duration: 0.5s;
+            }
+            .liyueText:hover
+            {
+                background: rgba(218, 145, 51, 0.91);
+            }
+
+            #texts
+            {
+                color: white;
+                margin-top: 15px;
+                font-family:Arial, Helvetica, sans-serif;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .sloganContainer
+            {
+                position: absolute;
+                border: 1px solid orange;
+                width: 23%;
+                height: 12%;
+                left: 9%;
+                top: 73%;
+                background: rgba(0,0,0,0.6);
+            }
+
+            /*Darkend background*/
+            .darkBack
+            {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.75);
+                z-index: -1;
+                opacity: 0;
+            }
+            @keyframes fadeUp
+            {
+                to
+                {
+                    z-index: 10;
+                }
+            }
+            .fade-up
+            {
+                z-index: 1;
+                animation: "fadeUp 1s ease-out forwards";
+            }
+            /* Keqing */
+            .columnOne
+            {
+                background-position: center;
+                background-color: black;
+                background-image: url('https://i2.wp.com/www.alphr.com/wp-content/uploads/2021/05/How-to-Play-Jean-in-Genshin-Impact-1.png?resize=1280%2C960&ssl=1');
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 1;
+                position: absolute;
+                width: 20%;
+                height: 100%;
+                left: 40%;
+                border: 1px solid orange;
+                transition-duration: 1s;
+            }
+            .columnOne:hover
+            {
+                background-image: url('https://assets2.rockpapershotgun.com/jean-character-demo/BROK/thumbnail/1200x900/quality/100/jean-character-demo');
+                width: 21%;
+                height: 100%;
+                opacity: 1;
+                border: 1px solid black;
+            }
+            /* Map */
+            .columnTwo
+            {
+                background-position: center;
+                background-image: url('https://1gamerdash.com/wp-content/uploads/2021/09/genshin-impact-fishing-locations.jpg?x54560');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                width: 20%;
+                height: 100%;
+                left: 60%;
+                border: 1px solid orange;
+                transition-duration: 1s;
+            }
+            .columnTwo:hover
+            {
+                background-image: url('https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/10/Liyue-Statue-of-Seven-Locations-Genshin-Impact.jpg');
+                width: 21%;
+                height: 100%;
+                border: 1px solid black;
+            }
+
+            /* Bosses */
+            .columnThree
+            {
+                background-position: center;
+                background-image: url('https://drive.google.com/u/1/uc?id=1nzfuTxcDX4JWaVULhodylWeuFr82MQ4Z&export=download');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                width: 20%;
+                height: 100%;
+                left: 80%;
+                border: 1px solid orange;
+                transition-duration: 1s;
+            }
+            .columnThree:hover
+            {
+                background-image: url('https://images3.alphacoders.com/114/thumb-1920-1146249.jpg');
+                width: 21%;
+                height: 100%;
+                border: 1px solid black;
+            }
+            #centerImage
+            {
+                position: absolute;
+                width: 65%;
+                height: 20%;
+                margin-left: 50px;
+                bottom: 5%;
+            }
+            .textContainer
+            {
+                width: 80%;
+                cursor: pointer;
+                opacity: 0;
+                height: 5%;
+                position: absolute;
+                left: 10%;
+                top: 44%;
+                background: rgba(0,0,0,0.91);
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+                transition-duration: 0.5s;
+            }
+            .textContainer:hover
+            {
+                background: rgba(70, 20, 70, 0.93);
+            }
+
+            .textContainerTwo
+            {
+                width: 80%;
+                opacity: 0;
+                cursor: pointer;
+                height: 5%;
+                position: absolute;
+                left: 10%;
+                top: 44%;
+                background: rgba(0,0,0,0.91);
+                border-left: 1px solid white;
+                transition-duration: 0.5s;
+            }
+            .textContainerTwo:hover
+            {
+                background: rgba(94, 180, 101, 0.93);
+            }
+
+            .textContainerThree
+            {
+                width: 80%;
+                cursor: pointer;
+                opacity: 0;
+                height: 5%;
+                position: absolute;
+                left: 10%;
+                top: 44%;
+                background: rgba(0,0,0,0.91);
+                border-left: 1px solid white;
+                transition-duration: 0.5s;
+            }
+            .textContainerThree:hover
+            {
+                background: rgba(94, 156, 180, 0.93);
+            }
+            .paragraph
+            {
+                font-size: 30px;
+            }
+
+            #text
+            {
+                margin: 7px;
+                text-align: center; 
+                font-size: 30px; 
+                color: white;
+            }
+
+            @media screen and (max-width: 1600px)
+            {
+                .sloganContainer
+                {
+                    height: 21%;
+                }
+                .paragraph
+                {
+                    margin-top: 8px;
+                    font-size: 25px;
+                }
+            }
+            @media screen and (max-height: 830px)
+            {
+                #text
+                {
+                    margin-top: 2px;
+                }
+            }
+            @media screen and (max-width: 1140px)
+            {
+                .sloganContainer
+                {
+                    height: 24%;
+                }
+                .paragraph
+                {
+                    font-size: 20px;
+                    margin-top: 11px;
+                }
+                .containText
+                {
+                    font-size: 12px;
+                }
+                #text
+                {
+                    margin-top: 2px;
+                }
+            }
+            
+            @media screen and (max-width: 990px)
+            {
+                .sloganContainer
+                {
+                    height: 28%;
+                }
+                #text
+                {
+                    font-size: 20px;
+                    margin-top: 7px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="splash0">
+        </div>
+        <div class="darkBack">
+
+        </div>
+        <div class="background">
+            <div class="containerNavigation">
+                <div class="contain" id="contain1">
+                    <img 
+                        src='https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download' 
+                        id="image1" 
+                        class="btnImage"
+                    >
+                    <p class="containText">Continue to Story Quest</p>
+                </div>
+                <div class="contain" id="contain2">
+                    <img 
+                        src='https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download' 
+                        id="image2" 
+                        class="btnImage2"
+                    >
+                    <p class="containText">Check current / previous events</p>
+                </div>
+                <div class="contain" id="contain3">
+                    <img 
+                        src='https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download' 
+                        id="image3" 
+                        class="btnImage3"
+                    >
+                    <p class="containText">Blank</p>
+                </div>
+            </div>
+            <div class="liyueImageBackgroundSlide">
+
+            </div>
+            <div class="liyueImage">
+                <div class="liyueText">
+                    <p id="texts">Liyue Harbor</p>
+                </div>
+            </div>
+            <div class="sloganContainer">
+                <p style="margin: 10px;text-align:center;">
+                    <b style="color: white">"</b>A prosperous port city where a thousand ships drop anchor. 
+                    Under the aegis of countless contracts and regulations, innumerable 
+                    goods change hands and grace the seven nations with their presence. 
+                    Welcome to Liyue, wayfaring Traveler.<b style="color: white">"</b>
+                </p>
+            </div>
+            <div class="columnOne">
+                <div class="textContainer">
+                    <p id="text">Characters</p>
+                </div>
+            </div>
+            <div class="columnTwo">
+                <div class="textContainerTwo" id="two">
+                    <p id="text">Map</p>
+                </div>
+            </div>
+            <div class="columnThree">
+                <div class="textContainerThree" id="three">
+                    <p id="text">Bosses</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="splash.js"></script>
+    <script src="mouseOver.js"></script>
+</html>
