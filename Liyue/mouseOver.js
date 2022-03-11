@@ -56,6 +56,7 @@ contain3.addEventListener('mouseout', (event) =>
     }
 });
 
+/*
 var column1 = document.querySelector('.columnOne');
 var column2 = document.querySelector('.columnTwo');
 var column3 = document.querySelector('.columnThree');
@@ -68,3 +69,5 @@ column1.addEventListener('mouseover', (event)=>
     column1.style.animation = 'fadeUp 1s ease-out forwards';
     
 });
+
+*/
