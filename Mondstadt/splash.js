@@ -42,7 +42,7 @@ window.addEventListener('load', (event) =>
         var text1 = document.querySelector('.textContainer');
         var text2 = document.querySelector('.textContainerTwo');
         var text3 = document.querySelector('.textContainerThree');
-        var textLast = document.querySelector('.liyueText');
+        var textLast = document.querySelector('.mondText');
 
         setTimeout(() =>
         {

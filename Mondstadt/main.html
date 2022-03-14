@@ -2,7 +2,7 @@
     <head>
         <link rel="preload" as="image" href="https://images.alphacoders.com/112/1123761.jpg">
         <link rel="preload" as="image" href="https://img.gamewith.net/img/original_cb1cfb042286e069b1a4fa57600bc728.jpg">
-        <link rel="preload" as="imaage" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/60ae4980-23d0-4fce-9fe5-7a55a9810bb3/de90les-99e898fe-6acb-4443-8fa3-20b85777978a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYwYWU0OTgwLTIzZDAtNGZjZS05ZmU1LTdhNTVhOTgxMGJiM1wvZGU5MGxlcy05OWU4OThmZS02YWNiLTQ0NDMtOGZhMy0yMGI4NTc3Nzk3OGEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JZxMgvtYnSkJfuzhDq4PsokPS19nbEEYFVh8LiRkpFQ">
+        <link rel="preload" as="image" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/60ae4980-23d0-4fce-9fe5-7a55a9810bb3/de90les-99e898fe-6acb-4443-8fa3-20b85777978a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYwYWU0OTgwLTIzZDAtNGZjZS05ZmU1LTdhNTVhOTgxMGJiM1wvZGU5MGxlcy05OWU4OThmZS02YWNiLTQ0NDMtOGZhMy0yMGI4NTc3Nzk3OGEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JZxMgvtYnSkJfuzhDq4PsokPS19nbEEYFVh8LiRkpFQ">
     <link rel="icon" href="https://preview.redd.it/fi4oa3o2w7t51.png?auto=webp&s=89f13a8454a198909a57288b40c277e4eb677524" type="image/ico">
         <style>
             body
@@ -23,7 +23,7 @@
                 top: 3%;
                 height: 20%;
                 width: 20%;
-                border: 1px solid rgb(0, 255, 136);
+                border: 1px solid rgba(131, 179, 91, 0.91);
                 margin: auto;
                 background: rgba(0,0,0,0.6);
             }
@@ -176,7 +176,7 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-                border: 2px solid rgb(0, 255, 136);
+                border: 2px solid rgba(131, 179, 91, 0.91);
                 width: 25%;
                 height: 40%;
                 top: 30%;
@@ -189,7 +189,7 @@
                 background: rgba(0,0,0,0.6);
                 background-position: center;
                 background-repeat: no-repeat;
-                border: 2px solid rgb(0, 255, 136);
+                border: 2px solid rgba(131, 179, 91, 0.91);
                 width: 25%;
                 height: 40%;
                 top: 30%;
@@ -212,7 +212,7 @@
             }
             .mondText:hover
             {
-                background: rgb(0, 255, 136);
+                background: rgba(131, 179, 91, 0.91);
             }
 
             #texts
@@ -227,7 +227,7 @@
             .sloganContainer
             {
                 position: absolute;
-                border: 1px solid rgb(0, 255, 136);
+                border: 1px solid rgba(131, 179, 91, 0.91);
                 width: 23%;
                 height: 12%;
                 left: 9%;
@@ -269,16 +269,17 @@
                 position: absolute;
                 width: 20%;
                 height: 100%;
-                left: 40%;
+                right: 40%;
                 border: 1px solid rgb(0, 0, 0);
                 transition-duration: 1s;
             }
             .columnOne:hover
             {
                 background-image: url('https://images.alphacoders.com/112/1123761.jpg');
-                width: 21%;
+                width: 40%;
                 height: 100%;
                 opacity: 1;
+                z-index: 2;
                 border: 1px solid black;
             }
             /* Map */
@@ -290,15 +291,17 @@
                 background-size: cover;
                 position: absolute;
                 width: 20%;
+                z-index: 1;
                 height: 100%;
-                left: 60%;
+                right: 20%;
                 border: 1px solid rgb(0, 0, 0);
                 transition-duration: 1s;
             }
             .columnTwo:hover
             {
                 background-image: url('https://img.gamewith.net/img/original_cb1cfb042286e069b1a4fa57600bc728.jpg');
-                width: 21%;
+                width: 40%;
+                z-index: 2;
                 height: 100%;
                 border: 1px solid black;
             }
@@ -313,15 +316,17 @@
                 position: absolute;
                 width: 20%;
                 height: 100%;
-                left: 80%;
+                right: 0%;
+                z-index: 1;
                 border: 1px solid rgb(0, 0, 0);
                 transition-duration: 1s;
             }
             .columnThree:hover
             {
                 background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/60ae4980-23d0-4fce-9fe5-7a55a9810bb3/de90les-99e898fe-6acb-4443-8fa3-20b85777978a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYwYWU0OTgwLTIzZDAtNGZjZS05ZmU1LTdhNTVhOTgxMGJiM1wvZGU5MGxlcy05OWU4OThmZS02YWNiLTQ0NDMtOGZhMy0yMGI4NTc3Nzk3OGEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JZxMgvtYnSkJfuzhDq4PsokPS19nbEEYFVh8LiRkpFQ');
-                width: 21%;
+                width: 40%;
                 height: 100%;
+                z-index: 2;
                 border: 1px solid black;
             }
             #centerImage
