@@ -90,36 +90,34 @@
                 position: absolute;
                 height: 8%;
                 width: 100%;
-                background: rgba(128,128,128,0.8);
+                background: rgba(255, 255, 255, 0.8);
                 transition-duration: 0.5s;
             }
             .navBar:hover
             {
-                background: rgb(68, 68, 68,0.9);
+                background: rgba(197, 197, 197, 0.9);
             }
             .btn
             {
                 position: absolute;
                 width: 5%;
                 opacity: 0;
-                height: 28%;
-                border-right: 2px solid rgb(255, 255, 255);
-                background: none;
+                height: 32%;
+                background: rgb(199, 199, 199);
                 background-size: cover;
-                top: 25%;
+                top: 23%;
                 font-size: 18px;
                 text-shadow: 0 0 4px #c99393, 0 0 2px #8888bb;
-                border-radius: 4px;
                 cursor: pointer;
-                padding: 6px 18px;
+                padding: 8px 26px;
                 text-align: center;
                 transition-duration: 0.4s;
             }
 
-            #btn1{ left: 34%; }
-            #btn2{ left: 43%; }
-            #btn3{ right: 31.5%; }
-            #btn4{ right: 40.5%; }
+            #btn1{ left: 15%; }
+            #btn2{ left: 35%; }
+            #btn3{ left: 55%; }
+            #btn4{ left: 75%; }
 
             .btn:hover
             {
@@ -129,7 +127,7 @@
             {
                 top: 1330px;
                 position: absolute;
-                background: rgba(128,128,128, 0.8);
+                background: rgba(255, 255, 255, 0.8);
                 border-top: 2px solid rgb(150, 149, 149);
                 height: 7%;
                 width: 100%;
@@ -137,7 +135,7 @@
             }
             .bottomContainer:hover
             {
-                background-color: rgb(68, 68, 68);
+                background-color: rgb(192, 192, 192);
                 opacity: 0.9;
             }
             .logo1
@@ -159,18 +157,18 @@
             .middleContainer
             {
                 position: absolute;
-                width: 35%;
+                width: 92%;
                 height: 1200px;
-                background-color:grey;
+                background-color: rgba(255, 255, 255, 0.85);
                 border-radius: 10px;
                 top: 10%;
-                left: 34%;
+                left: 4%;
                 transition-duration: 0.5s;
                 border: 1px solid rgb(119, 118, 118);
             }
             .middleContainer:hover
             {
-                background-color: rgb(68, 68, 68);
+                background-color: rgba(204, 204, 204, 0.9);
             }
             .headingContainer
             {
@@ -417,63 +415,8 @@
             <a class="btn" id="btn4">Events</a>
             
         </div>
-        <div style="background: rgba(128,128,128,0.8)" class="middleContainer">
-            <div class="headingContainer">
-                <h1 id="headingText">Explore Genshin Impact</h1>
-            </div>
+        <div class="middleContainer">
 
-
-            <!--First Buttons Container-->
-            <div id="one" class="middleBody" onclick="showsContainer('ct1')">
-                <div class="middleContentImg" style="background-image: url('https://images5.alphacoders.com/109/thumb-1920-1099191.jpg');"></div>
-                <div class="middleTextContainer" id="first">
-                    <p id="middleContentText">Mondstadt</p>
-                </div>
-            </div>
-            <div class="middleButtonsContainer" id="ct1">
-                <span class="closeButton" id="clsBtn" onclick="removesContainer('ct1')" title="Close">&times;</span><br>
-                <a class="btnMiddle" id="a" onclick="window.location.href='Mondstadt/main.html'">Characters</a>
-                <a class="btnMiddle" id="b" onclick="window.location.href='Mondstadt/main.html'">Map</a>
-                <a class="btnMiddle" id="c" onclick="window.location.href='Mondstadt/main.html'">Monsters</a>
-                <a class="btnMiddle" id="d" onclick="window.location.href='Mondstadt/main.html'">Story Quest</a>
-            </div>
-
-
-            <!--Second Buttons Container-->
-            <div id="two" class="middleBody" onclick="showsContainer('ct2')">
-                <div class="middleContentImg" style="background-image: url('https://images.alphacoders.com/116/thumb-1920-1169181.jpg');"></div>
-                <div class="middleTextContainer" id="second">
-                    <p id="middleContentText">Liyue</p>
-                </div>
-            </div>
-            <div class="middleButtonsContainer" id="ct2">
-                <span class="closeButton" id="clsBtn" onclick="removesContainer('ct2')" title="Close">&times;</span><br>
-                <a class="btnMiddle" id="e" onclick="window.location.href='Liyue/main.html'">Characters</a>
-                <a class="btnMiddle" id="f" onclick="window.location.href='Liyue/main.html'">Map</a>
-                <a class="btnMiddle" id="g" onclick="window.location.href='Liyue/main.html'">Monsters</a>
-                <a class="btnMiddle" id="h" onclick="window.location.href='Liyue/main.html'">Story Quest</a>
-            </div>
-            
-
-            <!--Third Buttons Container-->
-            <div id="three" class="middleBody" onclick="showsContainer('ct3')">
-                <div class="middleContentImg" style="background-image: url('https://images7.alphacoders.com/118/thumb-1920-1189484.jpg');"></div>
-                <div class="middleTextContainer" id="third">
-                    <p id="middleContentText">Inazuma</p>
-                </div>   
-            </div>
-            <div class="middleButtonsContainer" id="ct3">
-                <span class="closeButton" id="clsBtn" onclick="removesContainer('ct3')" title="Close">&times;</span><br>
-                <a class="btnMiddle" id="i">Characters</a>
-                <a class="btnMiddle" id="j">Map</a>
-                <a class="btnMiddle" id="k">Monsters</a>
-                <a class="btnMiddle" id="l">Story Quest</a>
-            </div>
-
-
-            <div class="middleLast">
-                <p id="middleLastText">More Information coming soon, stay tuned! ...</p>
-            </div>
         </div>
         <div class="bottomContainer">
             <!--
