@@ -1,12 +1,11 @@
 <html>
     <head>
-        <link rel="preload" href="ttps://1000logos.net/wp-content/uploads/2021/08/Genshin-Impact-Logo-500x314.png">
+        <link rel="preload" as="image" href="ttps://1000logos.net/wp-content/uploads/2021/08/Genshin-Impact-Logo-500x314.png">
         <link rel="icon" href="https://preview.redd.it/fi4oa3o2w7t51.png?auto=webp&s=89f13a8454a198909a57288b40c277e4eb677524" type="image/ico">
         <style>
             body
             {
                 margin: 0;
-                font-family: Arial, Helvetica, sans-serif;
             }
             .splash
             {
@@ -100,28 +99,30 @@
             .btn
             {
                 position: absolute;
-                width: 5%;
+                width: 20%;
                 opacity: 0;
-                height: 32%;
-                background: rgb(199, 199, 199);
-                background-size: cover;
-                top: 23%;
-                font-size: 18px;
-                text-shadow: 0 0 4px #c99393, 0 0 2px #8888bb;
+                height: 72%;
+                top: 2%;
+                font-size: 20px;
                 cursor: pointer;
                 padding: 8px 26px;
                 text-align: center;
-                transition-duration: 0.4s;
+                transition-duration: 1s;
             }
 
-            #btn1{ left: 15%; }
-            #btn2{ left: 35%; }
-            #btn3{ left: 55%; }
-            #btn4{ left: 75%; }
+            #btn1{ left: 1%; }
+            #btn2{ left: 26%; }
+            #btn3{ left: 51%; }
+            #btn4{ left: 76%; }
 
             .btn:hover
             {
-                background:rgb(158, 157, 157);
+                background: rgb(129, 129, 129);
+            }
+            .btnText
+            {
+                margin-top: 14px;
+                text-align: center;
             }
             .bottomContainer
             {
@@ -409,10 +410,18 @@
 
 
         <div class="navBar">
-            <a class="btn" id="btn1">Home</a>
-            <a class="btn" id="btn2">News</a>
-            <a class="btn" id="btn3">Support</a>
-            <a class="btn" id="btn4">Events</a>
+            <div class="btn" id="btn1">
+                <p class="btnText">Home</p>
+            </div>
+            <div class="btn" id="btn2">
+                <p class="btnText">News</p>
+            </div>
+            <div class="btn" id="btn3">
+                <p class="btnText">Support</p>
+            </div>
+            <div class="btn" id="btn4">
+                <p class="btnText">Events</p>
+            </div>
             
         </div>
         <div class="middleContainer">
