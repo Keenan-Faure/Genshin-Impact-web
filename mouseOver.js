@@ -1,7 +1,7 @@
 //Mondstadt
 var button = document.querySelector('.mBtn');
 var button2 = document.querySelector('.mBtn2');
-var button3 = document.querySelector('mBtn3');
+var button3 = document.querySelector('.mBtn3');
 
 button.addEventListener('mouseover', (event)=>
 {
