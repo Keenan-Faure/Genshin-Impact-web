@@ -421,7 +421,32 @@
                 background-position: center;
                 background-repeat: no-repeat;
             }
-
+            .mButtonsContainer
+            {
+                position: relative;
+                width: 98%;
+                height: 64%;
+                top: 35%;
+                background: green;
+                border-bottom-left-radius: 10px;
+            }
+            .mBtn
+            {
+                position: relative;
+                cursor: pointer;
+                width: 100%;
+                height: 20%;
+                background: pink;
+            }
+            .mBtn2
+            {
+                position: relative;
+                width: 100%;
+                cursor: pointer;
+                height: 20%;
+                background: pink;
+                top: 1%;
+            }
             .Liyue
             {
                 position: absolute;
@@ -453,6 +478,20 @@
 
             }
 
+            @keyframes increase
+            {
+                to
+                {
+                    height: 40%;
+                }
+            }
+            @keyframes decrease
+            {
+                to
+                {
+                    height: 20%;
+                }
+            }
         </style>
     </head>
     <body>
@@ -497,19 +536,23 @@
                 <div class="heading">
                     <p class="headingText">Mondstadt</p>
                 </div>
-                <div class="mImage"></div>
+                <div class="mImage">some image</div>
+                <div class="mButtonsContainer">
+                    <div class="mBtn"></div>
+                    <div class="mBtn2"></div>
+                </div>
             </div>
             <div class="Liyue">
                 <div class="heading">
                     <p class="headingText">Liyue</p>
                 </div>
-                <div class="mImage"></div>
+                <div class="mImage">some image (2)</div>
             </div>
             <div class="Inazuma">
                 <div class="heading">
                     <p class="headingText">Inazuma</p>
                 </div>
-                <div class="mImage"></div>
+                <div class="mImage">some image (3)</div>
             </div>
         </div>
         <!-- Bottom Container -->
@@ -524,4 +567,5 @@
     <script src="slide.js"></script>
     <script src="splash.js"></script>
     <script src="btnClicks.js"></script>
+    <script src="mouseOver.js"></script>
 </html>
