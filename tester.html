@@ -167,10 +167,6 @@
                 transition-duration: 0.5s;
                 border: 1px solid rgb(119, 118, 118);
             }
-            .something
-            {
-                position: absolute;
-            }
             .headingContainer
             {
                 position: absolute;
@@ -386,10 +382,66 @@
             #j{ top: 25%; }
             #k{ top: 40%; }
             #l{ top: 55%; }
-            
+
+            .Mondstadt
+            {
+                position: absolute;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                width: 34%;
+                height: 100%;
+                background: red;
+                border-right: 1px solid blue;
+            }
+
+            .mImage
+            {
+                position: absolute;
+                width: 80%;
+                height: 300px;
+                top: 8%;
+                left: 10%;
+                background: blue;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .Liyue
+            {
+                position: absolute;
+                left: 34%;
+                width: 34%;
+                height: 100%;
+                background: red;
+                border-right: 1px solid blue;
+            }
+
+            .lImage
+            {
+
+            }
+
+            .Inazuma
+            {
+                position: absolute;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                left: 68%;
+                width: 32%;
+                height: 100%;
+                background: red;
+            }
+
+            .iImage
+            {
+
+            }
+
         </style>
     </head>
     <body>
+        <!-- Splash Screen -->
         <div class="splash">
         </div>
         <div class="background">
@@ -408,7 +460,7 @@
             </div>
         </div>
 
-
+        <!-- Navi bar -->
         <div class="navBar">
             <div class="btn" id="btn1">
                 <p class="btnText">Home</p>
@@ -422,11 +474,21 @@
             <div class="btn" id="btn4">
                 <p class="btnText">Events</p>
             </div>
-            
         </div>
-        <div class="middleContainer">
 
+        <!-- Middle Container -->
+        <div class="middleContainer">
+            <div class="Mondstadt">
+                <div class="mImage"></div>
+            </div>
+            <div class="Liyue">
+
+            </div>
+            <div class="Inazuma">
+
+            </div>
         </div>
+        <!-- Bottom Container -->
         <div class="bottomContainer">
             <!--
             <img class="logo1" src="https://upload.wikimedia.org/wikipedia/en/3/32/MiHoYo_Logo.png">
