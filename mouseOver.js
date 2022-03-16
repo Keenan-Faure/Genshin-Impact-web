@@ -6,7 +6,7 @@ var button3 = document.querySelector('.mBtn3');
 button.addEventListener('mouseover', (event)=>
 {
 
-    button.style.animation = "increase 1s ease-in forwards";
+    button.style.animation = "increase 0.1s ease-in forwards";
 });
 
 button.addEventListener('mouseout', (event)=>
@@ -21,7 +21,7 @@ button.addEventListener('mouseout', (event)=>
 
 button2.addEventListener('mouseover', (event)=>
 {
-    button2.style.animation = "increase 1s ease-in forwards";
+    button2.style.animation = "increase 0.1s ease-in forwards";
 });
 
 button2.addEventListener('mouseout', (event)=>
@@ -35,7 +35,7 @@ button2.addEventListener('mouseout', (event)=>
 });
 button3.addEventListener('mouseover', (event)=>
 {
-    button3.style.animation = "increase 1s ease-in forwards";
+    button3.style.animation = "increase 0.1s ease-in forwards";
 });
 
 button3.addEventListener('mouseout', (event)=>
@@ -55,7 +55,7 @@ var lbutton3 = document.querySelector('.lBtn3');
 lbutton.addEventListener('mouseover', (event)=>
 {
 
-    lbutton.style.animation = "increase 1s ease-in forwards";
+    lbutton.style.animation = "increase 0.1s ease-in forwards";
 });
 
 lbutton.addEventListener('mouseout', (event)=>
@@ -70,7 +70,7 @@ lbutton.addEventListener('mouseout', (event)=>
 
 lbutton2.addEventListener('mouseover', (event)=>
 {
-    lbutton2.style.animation = "increase 1s ease-in forwards";
+    lbutton2.style.animation = "increase 0.1s ease-in forwards";
 });
 
 lbutton2.addEventListener('mouseout', (event)=>
@@ -84,7 +84,7 @@ lbutton2.addEventListener('mouseout', (event)=>
 });
 lbutton3.addEventListener('mouseover', (event)=>
 {
-    lbutton3.style.animation = "increase 1s ease-in forwards";
+    lbutton3.style.animation = "increase 0.1s ease-in forwards";
 });
 
 lbutton3.addEventListener('mouseout', (event)=>
@@ -106,7 +106,7 @@ var ibutton3 = document.querySelector('.iBtn3');
 ibutton.addEventListener('mouseover', (event)=>
 {
 
-    ibutton.style.animation = "increase 1s ease-in forwards";
+    ibutton.style.animation = "increase 0.1s ease-in forwards";
 });
 
 ibutton.addEventListener('mouseout', (event)=>
@@ -121,7 +121,7 @@ ibutton.addEventListener('mouseout', (event)=>
 
 ibutton2.addEventListener('mouseover', (event)=>
 {
-    ibutton2.style.animation = "increase 1s ease-in forwards";
+    ibutton2.style.animation = "increase 0.1s ease-in forwards";
 });
 
 ibutton2.addEventListener('mouseout', (event)=>
@@ -135,7 +135,7 @@ ibutton2.addEventListener('mouseout', (event)=>
 });
 ibutton3.addEventListener('mouseover', (event)=>
 {
-    ibutton3.style.animation = "increase 1s ease-in forwards";
+    ibutton3.style.animation = "increase 0.1s ease-in forwards";
 });
 
 ibutton3.addEventListener('mouseout', (event)=>
