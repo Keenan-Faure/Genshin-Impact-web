@@ -1,12 +1,11 @@
 <html>
     <head>
-        <link rel="preload" href="ttps://1000logos.net/wp-content/uploads/2021/08/Genshin-Impact-Logo-500x314.png">
+        <link rel="preload" as="image" href="ttps://1000logos.net/wp-content/uploads/2021/08/Genshin-Impact-Logo-500x314.png">
         <link rel="icon" href="https://preview.redd.it/fi4oa3o2w7t51.png?auto=webp&s=89f13a8454a198909a57288b40c277e4eb677524" type="image/ico">
         <style>
             body
             {
                 margin: 0;
-                font-family: Arial, Helvetica, sans-serif;
             }
             .splash
             {
@@ -90,46 +89,47 @@
                 position: absolute;
                 height: 8%;
                 width: 100%;
-                background: rgba(128,128,128,0.8);
+                background: rgba(255, 255, 255, 0.8);
                 transition-duration: 0.5s;
             }
             .navBar:hover
             {
-                background: rgb(68, 68, 68,0.9);
+                background: rgba(219, 219, 219, 0.9);
             }
             .btn
             {
                 position: absolute;
-                width: 5%;
+                width: 20%;
                 opacity: 0;
-                height: 28%;
-                border-right: 2px solid rgb(255, 255, 255);
-                background: none;
-                background-size: cover;
-                top: 25%;
-                font-size: 18px;
-                text-shadow: 0 0 4px #c99393, 0 0 2px #8888bb;
-                border-radius: 4px;
+                height: 72%;
+                top: 2%;
+                font-size: 20px;
                 cursor: pointer;
-                padding: 6px 18px;
+                padding: 8px 26px;
                 text-align: center;
-                transition-duration: 0.4s;
+                transition-duration: 1s;
             }
 
-            #btn1{ left: 34%; }
-            #btn2{ left: 43%; }
-            #btn3{ right: 31.5%; }
-            #btn4{ right: 40.5%; }
+            #btn1{ left: 1%; }
+            #btn2{ left: 26%; }
+            #btn3{ left: 51%; }
+            #btn4{ left: 76%; }
 
             .btn:hover
             {
-                background:rgb(158, 157, 157);
+                background: rgba(90, 90, 90, 0.98);
+                border-radius: 1px;
+            }
+            .btnText
+            {
+                margin-top: 14px;
+                text-align: center;
             }
             .bottomContainer
             {
                 top: 1330px;
                 position: absolute;
-                background: rgba(128,128,128, 0.8);
+                background: rgba(255, 255, 255, 0.8);
                 border-top: 2px solid rgb(150, 149, 149);
                 height: 7%;
                 width: 100%;
@@ -137,8 +137,7 @@
             }
             .bottomContainer:hover
             {
-                background-color: rgb(68, 68, 68);
-                opacity: 0.9;
+                background-color: rgba(90, 90, 90, 0.9);
             }
             .logo1
             {
@@ -159,18 +158,14 @@
             .middleContainer
             {
                 position: absolute;
-                width: 35%;
+                width: 92%;
                 height: 1200px;
-                background-color:grey;
+                background-color: rgba(255, 255, 255, 0.85);
                 border-radius: 10px;
                 top: 10%;
-                left: 34%;
+                left: 4%;
                 transition-duration: 0.5s;
                 border: 1px solid rgb(119, 118, 118);
-            }
-            .middleContainer:hover
-            {
-                background-color: rgb(68, 68, 68);
             }
             .headingContainer
             {
@@ -387,10 +382,267 @@
             #j{ top: 25%; }
             #k{ top: 40%; }
             #l{ top: 55%; }
-            
+
+            .heading
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 6%;
+                width: 100%;
+                background: rgb(255, 255, 255);
+                opacity: 0.9;
+                border-bottom: 2px solid #a8a8a8;
+            }
+            .headingText
+            {
+                text-align: center;
+                font-size: 20px;
+                margin-top: 22px;
+            }
+            .SloganText
+            {
+                font-size: 21px;
+                text-align: center;
+                font-family: American Typewriter, serif;
+                margin: 10px;
+                color: white;
+                margin-top: 55px;
+                opacity: 0.06;
+            }
+            .buttonText
+            {
+                font-size: 25px;
+                text-align: center;
+                color: white;
+                border: 2px solid white;
+
+                transition-duration: 0.2s;
+            }
+            @media screen and (max-width: 1200px)
+            {
+                .SloganText
+                {
+                    font-size: 14px;
+                }
+            }
+            @media screen and (max-width: 1400px)
+            {
+                .SloganText
+                {
+                    font-size: 16px;
+                }
+            }
+            .Mondstadt
+            {
+                position: absolute;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                width: 34%;
+                height: 100%;
+                background: rgba(0,0,0,0.6);
+            }
+
+            .mImage
+            {
+                position: absolute;
+                width: 80%;
+                height: 300px;
+                top: 8%;
+                left: 10%;
+                background-image: url('https://drive.google.com/u/1/uc?id=1tO25hMwHsI8IxbJ9V9vRvCTKWMLOJygG&export=download');
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .mButtonsContainer
+            {
+                position: relative;
+                width: 98%;
+                height: 64%;
+                top: 35%;
+                background: green;
+                border-bottom-left-radius: 10px;
+            }
+            .mBtn
+            {
+                position: relative;
+                cursor: pointer;
+                width: 100%;
+                height: 20%;
+                background-image: url('https://i2.wp.com/www.alphr.com/wp-content/uploads/2021/05/Jean.png?resize=768%2C421&ssl=1');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top;
+
+            }
+            .mBtn2
+            {
+                position: relative;
+                width: 100%;
+                cursor: pointer;
+                height: 20%;
+                background-image: url('');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .mBtn3
+            {
+                position: relative;
+                width: 100%;
+                cursor: pointer;
+                height: 20%;
+                background-image: url('');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .Liyue
+            {
+                position: absolute;
+                left: 34%;
+                width: 34%;
+                height: 100%;
+                background: rgba(0,0,0,0.6);
+            }
+
+            .lImage
+            {
+                position: absolute;
+                width: 80%;
+                height: 300px;
+                top: 8%;
+                left: 10%;
+                background-image: url('https://drive.google.com/u/0/uc?id=1KppbCR37bVwalDy4vHmRg-MynBpTldY8&export=download');
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .lButtonsContainer
+            {
+                position: relative;
+                width: 98%;
+                height: 64%;
+                top: 35%;
+                background: green;
+                border-bottom-left-radius: 10px;
+            }
+            .lBtn
+            {
+                position: relative;
+                cursor: pointer;
+                width: 100%;
+                height: 20%;
+                background-image: url('');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .lBtn2
+            {
+                position: relative;
+                width: 100%;
+                cursor: pointer;
+                height: 20%;
+                background-image: url('');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+            .lBtn3
+            {
+                position: relative;
+                width: 100%;
+                cursor: pointer;
+                height: 20%;
+                background-image: url('');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .Inazuma
+            {
+                position: absolute;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                left: 68%;
+                width: 32%;
+                height: 100%;
+                background: rgba(0,0,0,0.6);
+            }
+
+            .iImage
+            {
+                position: absolute;
+                width: 80%;
+                height: 300px;
+                top: 8%;
+                left: 10%;
+                background-image: url('https://drive.google.com/u/1/uc?id=1W0FyjYnvLlAFV-2y3FQhqH2xoGN2Z-P7&export=download');
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .iButtonsContainer
+            {
+                position: relative;
+                width: 98%;
+                height: 64%;
+                top: 35%;
+                background: green;
+                border-bottom-left-radius: 10px;
+            }
+            .iBtn
+            {
+                position: relative;
+                cursor: pointer;
+                width: 100%;
+                height: 20%;
+                background-image: url('');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .iBtn2
+            {
+                position: relative;
+                width: 100%;
+                cursor: pointer;
+                height: 20%;
+                background-image: url('');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+            .iBtn3
+            {
+                position: relative;
+                width: 100%;
+                cursor: pointer;
+                height: 20%;
+                background-image: url('');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            @keyframes increase
+            {
+                to
+                {
+                    height: 40%;
+                }
+            }
+            @keyframes decrease
+            {
+                to
+                {
+                    height: 20%;
+                }
+            }
         </style>
     </head>
     <body>
+        <!-- Splash Screen -->
         <div class="splash">
         </div>
         <div class="background">
@@ -409,72 +661,80 @@
             </div>
         </div>
 
-
+        <!-- Navi bar -->
         <div class="navBar">
-            <a class="btn" id="btn1">Home</a>
-            <a class="btn" id="btn2">News</a>
-            <a class="btn" id="btn3">Support</a>
-            <a class="btn" id="btn4">Events</a>
-            
-        </div>
-        <div style="background: rgba(128,128,128,0.8)" class="middleContainer">
-            <div class="headingContainer">
-                <h1 id="headingText">Explore Genshin Impact</h1>
+            <div class="btn" id="btn1">
+                <p class="btnText">Home</p>
             </div>
-
-
-            <!--First Buttons Container-->
-            <div id="one" class="middleBody" onclick="showsContainer('ct1')">
-                <div class="middleContentImg" style="background-image: url('https://images5.alphacoders.com/109/thumb-1920-1099191.jpg');"></div>
-                <div class="middleTextContainer" id="first">
-                    <p id="middleContentText">Mondstadt</p>
-                </div>
+            <div class="btn" id="btn2">
+                <p class="btnText">News</p>
             </div>
-            <div class="middleButtonsContainer" id="ct1">
-                <span class="closeButton" id="clsBtn" onclick="removesContainer('ct1')" title="Close">&times;</span><br>
-                <a class="btnMiddle" id="a" onclick="window.location.href='Mondstadt/main.html'">Characters</a>
-                <a class="btnMiddle" id="b" onclick="window.location.href='Mondstadt/main.html'">Map</a>
-                <a class="btnMiddle" id="c" onclick="window.location.href='Mondstadt/main.html'">Monsters</a>
-                <a class="btnMiddle" id="d" onclick="window.location.href='Mondstadt/main.html'">Story Quest</a>
+            <div class="btn" id="btn3">
+                <p class="btnText">Support</p>
             </div>
-
-
-            <!--Second Buttons Container-->
-            <div id="two" class="middleBody" onclick="showsContainer('ct2')">
-                <div class="middleContentImg" style="background-image: url('https://images.alphacoders.com/116/thumb-1920-1169181.jpg');"></div>
-                <div class="middleTextContainer" id="second">
-                    <p id="middleContentText">Liyue</p>
-                </div>
-            </div>
-            <div class="middleButtonsContainer" id="ct2">
-                <span class="closeButton" id="clsBtn" onclick="removesContainer('ct2')" title="Close">&times;</span><br>
-                <a class="btnMiddle" id="e" onclick="window.location.href='Liyue/main.html'">Characters</a>
-                <a class="btnMiddle" id="f" onclick="window.location.href='Liyue/main.html'">Map</a>
-                <a class="btnMiddle" id="g" onclick="window.location.href='Liyue/main.html'">Monsters</a>
-                <a class="btnMiddle" id="h" onclick="window.location.href='Liyue/main.html'">Story Quest</a>
-            </div>
-            
-
-            <!--Third Buttons Container-->
-            <div id="three" class="middleBody" onclick="showsContainer('ct3')">
-                <div class="middleContentImg" style="background-image: url('https://images7.alphacoders.com/118/thumb-1920-1189484.jpg');"></div>
-                <div class="middleTextContainer" id="third">
-                    <p id="middleContentText">Inazuma</p>
-                </div>   
-            </div>
-            <div class="middleButtonsContainer" id="ct3">
-                <span class="closeButton" id="clsBtn" onclick="removesContainer('ct3')" title="Close">&times;</span><br>
-                <a class="btnMiddle" id="i">Characters</a>
-                <a class="btnMiddle" id="j">Map</a>
-                <a class="btnMiddle" id="k">Monsters</a>
-                <a class="btnMiddle" id="l">Story Quest</a>
-            </div>
-
-
-            <div class="middleLast">
-                <p id="middleLastText">More Information coming soon, stay tuned! ...</p>
+            <div class="btn" id="btn4">
+                <p class="btnText">Events</p>
             </div>
         </div>
+
+        <!-- Middle Container -->
+        <div class="middleContainer">
+            <div class="Mondstadt">
+                <div class="heading">
+                    <p class="headingText">Mondstadt</p>
+                </div>
+                <div class="mImage">
+                    <p class="SloganText">
+                        A city of freedom that lies in the northeast of Teyvat. 
+                        From amongst mountains and wide-open plains, carefree breezes carry the scent of dandelions 
+                        — a gift from the Anemo God, Barbatos — across Cider Lake to Mondstadt, 
+                        which sits on an island in the middle of the lake.
+                    </p>
+                </div>
+                <div class="mButtonsContainer">
+                    <div class="mBtn"><p class="buttonText">Characters</p></div>
+                    <div class="mBtn2"></div>
+                    <div class="mBtn3"></div>
+                </div>
+            </div>
+            <div class="Liyue">
+                <div class="heading">
+                    <p class="headingText">Liyue</p>
+                </div>
+                <div class="lImage">
+                    <p class="SloganText">
+                        A prosperous port city where a thousand ships drop anchor. 
+                        Under the aegis of countless contracts and regulations, innumerable 
+                        goods change hands and grace the seven nations with their presence. 
+                        Welcome to Liyue, wayfaring Traveler.
+                    </p>
+                </div>
+                <div class="lButtonsContainer">
+                    <div class="lBtn"></div>
+                    <div class="lBtn2"></div>
+                    <div class="lBtn3"></div>
+                </div>
+            </div>
+            <div class="Inazuma">
+                <div class="heading">
+                    <p class="headingText">Inazuma</p>
+                </div>
+                <div class="iImage">
+                    <p class="SloganText">
+                        An Isolated Archipelago Far East of Teyvat
+                        Overcome endless thunderstorms and set foot on the islands of red maple and cherry blossoms. 
+                        On winding shores and towering cliffs, and in forests and mountains full of secrets, 
+                        witness the Eternity pursued by Her Excellency, the Almighty Narukami Ogosho.
+                    </p>
+                </div>
+                <div class="iButtonsContainer">
+                    <div class="iBtn"></div>
+                    <div class="iBtn2"></div>
+                    <div class="iBtn3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Container -->
         <div class="bottomContainer">
             <!--
             <img class="logo1" src="https://upload.wikimedia.org/wikipedia/en/3/32/MiHoYo_Logo.png">
@@ -486,4 +746,5 @@
     <script src="slide.js"></script>
     <script src="splash.js"></script>
     <script src="btnClicks.js"></script>
+    <script src="mouseOver.js"></script>
 </html>

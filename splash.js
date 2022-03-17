@@ -39,11 +39,11 @@ window.addEventListener('load', (event) =>
             },750);
             setTimeout(() =>
             {
-                btn4.style.animation = "fadeOut 1s ease-out forwards";
+                btn3.style.animation = "fadeOut 1s ease-out forwards";
             },1000);
             setTimeout(() =>
             {
-                btn3.style.animation = "fadeOut 1s ease-out forwards";
+                btn4.style.animation = "fadeOut 1s ease-out forwards";
             },1250);
         },100)
     },5000);
