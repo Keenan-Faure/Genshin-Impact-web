@@ -400,6 +400,13 @@
                 font-size: 20px;
                 margin-top: 22px;
             }
+            @keyframes colors
+            {
+                to
+                {
+                    background: rgb(139, 139, 139);
+                }
+            }
             .SloganText
             {
                 font-size: 21px;
@@ -414,12 +421,14 @@
             {
                 position: relative;
                 width: 100%;
-                height: 40%;
+                height: 18%;
+                top: 2%;
                 background: lightblue;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
             }
+
             @media screen and (max-width: 1200px)
             {
                 .SloganText
@@ -598,7 +607,7 @@
                 cursor: pointer;
                 width: 100%;
                 height: 20%;
-                background-image: url('');
+                background-image: url('https://imageio.forbes.com/specials-images/imageserve/60eaf158fca5883d3bc826d2/Genshin-Impact/960x0.jpg?fit=bounds&format=jpg&width=960');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -680,7 +689,7 @@
 
         <!-- Middle Container -->
         <div class="middleContainer">
-            <div class="Mondstadt">
+            <div class="Mondstadt" id="mondstadt">
                 <div class="heading">
                     <p class="headingText">Mondstadt</p>
                 </div>
@@ -696,9 +705,10 @@
                     <div class="mBtn"></div>
                     <div class="mBtn2"></div>
                     <div class="mBtn3"></div>
+                    <div class="statueContainer"></div>
                 </div>
             </div>
-            <div class="Liyue">
+            <div class="Liyue" id="liyue">
                 <div class="heading">
                     <p class="headingText">Liyue</p>
                 </div>
@@ -714,9 +724,10 @@
                     <div class="lBtn"></div>
                     <div class="lBtn2"></div>
                     <div class="lBtn3"></div>
+                    <div class="statueContainer"></div>
                 </div>
             </div>
-            <div class="Inazuma">
+            <div class="Inazuma" id="inazuma">
                 <div class="heading">
                     <p class="headingText">Inazuma</p>
                 </div>
@@ -732,6 +743,7 @@
                     <div class="iBtn"></div>
                     <div class="iBtn2"></div>
                     <div class="iBtn3"></div>
+                    <div class="statueContainer"></div>
                 </div>
             </div>
         </div>

@@ -147,3 +147,57 @@ ibutton3.addEventListener('mouseout', (event)=>
         ibutton3.style.height = "20%";
     }, 200);
 });
+
+//////////////////////////
+/////////mouseOver////////
+//////////////////////////
+
+var Mondstadt= document.querySelector('.Mondstadt');
+var Liyue= document.querySelector('.Liyue');
+var Inazuma = document.querySelector('.Inazuma');
+
+Mondstadt.addEventListener('mouseover', (event)=>
+{
+    var header = document.getElementById('mondstadt');
+});
+
+Liyue.addEventListener('mouseover', (event)=>
+{
+    var header = document.getElementById('liyue');
+});
+
+Inazuma.addEventListener('mouseover', (event)=>
+{
+    var header = document.getElementById('inazuma');
+    header.style.animation = 'color 0.2s ease-in forwards';
+    setTimeout(()=>
+    {
+        header.background = 'rgb(139, 139, 139);';
+    }, 200);
+});
+
+
+//////////////////////////
+/////////mouseOut/////////
+//////////////////////////
+
+Mondstadt.addEventListener('mouseover', (event)=>
+{
+    var header = document.getElementById('mondstadt');
+});
+
+Liyue.addEventListener('mouseover', (event)=>
+{
+    var header = document.getElementById('liyue');
+});
+
+Inazuma.addEventListener('mouseover', (event)=>
+{
+    var header = document.getElementById('inazuma');
+    header.style.animation = 'color 0.2s ease-in forwards';
+    setTimeout(()=>
+    {
+        header.background = 'rgb(139, 139, 139);';
+    }, 200);
+});
+
