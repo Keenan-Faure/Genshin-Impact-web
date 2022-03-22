@@ -400,13 +400,6 @@
                 font-size: 20px;
                 margin-top: 22px;
             }
-            @keyframes colors
-            {
-                to
-                {
-                    background: rgb(139, 139, 139);
-                }
-            }
             .SloganText
             {
                 font-size: 21px;
@@ -451,6 +444,11 @@
                 width: 34%;
                 height: 100%;
                 background: rgba(0,0,0,0.6);
+                transition-duration: 0.2s;
+            }
+            .Mondstadt:hover
+            {
+                background: rgba(37, 37, 37, 0.6);
             }
 
             .mImage
@@ -689,8 +687,8 @@
 
         <!-- Middle Container -->
         <div class="middleContainer">
-            <div class="Mondstadt" id="mondstadt">
-                <div class="heading">
+            <div class="Mondstadt">
+                <div class="heading" id="mondstadt">
                     <p class="headingText">Mondstadt</p>
                 </div>
                 <div class="mImage">
@@ -708,8 +706,8 @@
                     <div class="statueContainer"></div>
                 </div>
             </div>
-            <div class="Liyue" id="liyue">
-                <div class="heading">
+            <div class="Liyue">
+                <div class="heading" id="liyue">
                     <p class="headingText">Liyue</p>
                 </div>
                 <div class="lImage">
@@ -727,8 +725,8 @@
                     <div class="statueContainer"></div>
                 </div>
             </div>
-            <div class="Inazuma" id="inazuma">
-                <div class="heading">
+            <div class="Inazuma">
+                <div class="heading" id="inazuma">
                     <p class="headingText">Inazuma</p>
                 </div>
                 <div class="iImage">
