@@ -155,9 +155,10 @@ var ina = document.querySelector('.Inazuma');
 mond.addEventListener('mouseover', (event) =>
 {
     var img = document.querySelector('.mImage');
-    var text = document.querySelector('.sloganText');
+    var text = document.getElementById('m');
 
-    
+
+
 
 });
 
