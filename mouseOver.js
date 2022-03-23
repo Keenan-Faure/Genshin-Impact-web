@@ -156,10 +156,24 @@ mond.addEventListener('mouseover', (event) =>
 {
     var img = document.querySelector('.mImage');
     var text = document.getElementById('m');
+
+    img.style.opacity = '1';
+    img.style.animation = 'fadeIn 0.5s ease-in forwards';
     
+    text.style.opacity = '0.06';
+    text.style.animation = 'fadeOut 2s ease-in forwards';
+
+});
+
+mond.addEventListener('mouseout', (event)=>
+{
+    var img = document.querySelector('.mImage');
+    var text = document.getElementById('m');
+
+    img.style.opacity = '0.06';
+    img.style.animation = 'fadeOut 2s ease-in forwards';
     
-
-
-
+    text.style.opacity = '1';
+    text.style.animation = 'fadeIn 0.5s ease-in forwards';
 });
 
