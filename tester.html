@@ -641,15 +641,22 @@
                 background-repeat: no-repeat;
                 background-position: center;
             }
+            .textButtonsContainer
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
             .textButtons
             {
-                font-size: 35px;
-                top: 5%;
-                left: 40%;
-                position: absolute;
+                text-align: center;
+                font-size: 30px;
+                margin-top: 50px;
                 color: gold;
-                background: rgba(214, 224, 184, 0.2);
-                border-radius: 10px;
+                text-shadow: 0 0 4px #c99393, 0 0 2px #8888bb;
+                background: rgba(0,0,0,0.6);
             }
             @keyframes increase
             {
@@ -718,7 +725,12 @@
                     </p>
                 </div>
                 <div class="mButtonsContainer">
-                    <div class="mBtn"><p class="textButtons">Characters</p></div>
+                    <div class="mBtn">
+                        <div class="textButtonsContainer">
+                            <p class="textButtons">Characters</p>
+                        </div>
+
+                    </div>
                     <div class="mBtn2"></div>
                     <div class="mBtn3"></div>
                     <div class="statueContainer"></div>
