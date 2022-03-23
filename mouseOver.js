@@ -148,3 +148,16 @@ ibutton3.addEventListener('mouseout', (event)=>
     }, 200);
 });
 
+var mond = document.querySelector('.Mondstadt');
+var liy = document.querySelector('.Liyue');
+var ina = document.querySelector('.Inazuma');
+
+mond.addEventListener('mouseover', (event) =>
+{
+    var img = document.querySelector('.mImage');
+    var text = document.querySelector('.sloganText');
+
+    
+
+});
+
