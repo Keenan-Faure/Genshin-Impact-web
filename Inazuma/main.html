@@ -1,0 +1,530 @@
+<html>
+    <head>
+        <link rel="preload" as="image" href="https://images.alphacoders.com/112/1123761.jpg">
+        <link rel="preload" as="image" href="https://img.gamewith.net/img/original_cb1cfb042286e069b1a4fa57600bc728.jpg">
+        <link rel="preload" as="image" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/60ae4980-23d0-4fce-9fe5-7a55a9810bb3/de90les-99e898fe-6acb-4443-8fa3-20b85777978a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYwYWU0OTgwLTIzZDAtNGZjZS05ZmU1LTdhNTVhOTgxMGJiM1wvZGU5MGxlcy05OWU4OThmZS02YWNiLTQ0NDMtOGZhMy0yMGI4NTc3Nzk3OGEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JZxMgvtYnSkJfuzhDq4PsokPS19nbEEYFVh8LiRkpFQ">
+    <link rel="icon" href="https://preview.redd.it/fi4oa3o2w7t51.png?auto=webp&s=89f13a8454a198909a57288b40c277e4eb677524" type="image/ico">
+        <style>
+            body
+            {
+                margin: 0;
+                overflow: hidden;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body::after
+            {
+                display: none;
+                content: url('https://images.alphacoders.com/112/1123761.jpg') url('https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/10/Liyue-Statue-of-Seven-Locations-Genshin-Impact.jpg') url('https://images3.alphacoders.com/114/thumb-1920-1146249.jpg');
+            }
+            .containerNavigation
+            {
+                position: absolute;
+                left: 11%;
+                top: 3%;
+                height: 20%;
+                width: 20%;
+                border: 1px solid rgba(131, 179, 91, 0.91);
+                margin: auto;
+                background: rgba(0,0,0,0.6);
+            }
+            .contain
+            {
+                position: absolute;
+                width: 98%;
+                height: 25%;
+                left: 1%;
+                text-align: left;
+                color: rgb(0, 0, 0);
+                font-size: 15px;
+                transition-duration: 1s;
+            }
+            #contain1{ top: 5%; }
+            #contain2{ top: 38%; }
+            #contain3{ top: 69%; }
+            .contain:hover
+            {
+                background: rgba(131, 179, 91, 0.91);
+            }
+            .containText
+            {
+                margin-left: 22px;
+                text-align: center; 
+                font-size: 15px; 
+                color: black;
+            }
+            .btnImage
+            {
+                top: 0%;
+                left: 0%;
+                width: 50px; 
+                height: 50px;
+                position: absolute;
+                display: block;
+                opacity: 0;
+                
+            }
+            .btnImage2
+            {
+                top: 0%;
+                left: 0%;
+                width: 50px; 
+                height: 50px;
+                position: absolute;
+                display: block;
+                opacity: 0;
+            }
+            
+            .btnImage3
+            {
+                top: 0%;
+                left: 0%;
+                width: 50px; 
+                height: 50px;
+                position: absolute;
+                display: block;
+                opacity: 0;
+            }
+            .splash0
+            {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 11;
+                background-color: black;
+            }
+            .splash0.display-none
+            {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: -11;
+                opacity: 0;
+                transition-duration: all 0.5s;
+            }
+            .splash
+            {
+                background: url(https://images7.alphacoders.com/110/thumb-1920-1108907.jpg) no-repeat center;
+                content: "";
+                display: inline-block;
+                height: 100%;
+                overflow: hidden;
+                opacity: 1;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 10;
+                animation: 11s ease 0s normal none infinite running zoomin;
+                -webkit-animation: 11s ease 0s normal none infinite running zoomin;
+                -o-animation: 17s ease 0s normal none infinite running zoomin;
+                
+            }
+            .splashText
+            {
+                top: 85%;
+                animation: "fadeOut 2s ease-in forwards";
+                position: absolute;
+                left: 43%;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgb(209, 209, 209);
+                text-shadow: 0 0 4px #000000, 0 0 2px #000000;
+                font-size: 35px;
+            }
+            @keyframes zoomin 
+            {
+                0% { transform: scale(1.1, 1.1) }
+                50% { transform: scale(1, 1) }
+                100% { transform: scale(0.0 ,0.0) }
+            }
+            @keyframes fadeIn
+            {
+                to
+                {
+                    opacity: 1;
+                }
+            }
+            @keyframes fadeOut
+            {
+                to
+                {
+                    opacity: 0;
+                }
+            }
+            .fade-out
+            {
+                opacity: 1;
+                animation: "fadeOut 1s ease-out forwards";
+            }
+            .fade-in
+            {
+                opacity: 0;
+                animation: "fadeIn 1s ease-in forwards";
+            }
+            .background
+            {
+                position: fixed;
+                background-image: url('https://images5.alphacoders.com/110/1108905.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+            }
+            .mondImageBackgroundSlide
+            {
+                position: absolute;
+                background: rgba(58, 57, 57, 0.91);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border: 2px solid rgba(131, 179, 91, 0.91);
+                width: 25%;
+                height: 40%;
+                top: 30%;
+                left: 8%;
+                background-image: url('https://images7.alphacoders.com/110/1109220.jpg');
+            }
+            .mondImage
+            {
+                position: absolute;
+                background: rgba(0,0,0,0.6);
+                background-position: center;
+                background-repeat: no-repeat;
+                border: 2px solid rgba(131, 179, 91, 0.91);
+                width: 25%;
+                height: 40%;
+                top: 30%;
+                left: 8%;
+                background-image: url('https://drive.google.com/u/1/uc?id=1tO25hMwHsI8IxbJ9V9vRvCTKWMLOJygG&export=download');
+            }
+            .mondText
+            {
+                width: 80%;
+                cursor: pointer;
+                opacity: 0;
+                height: 15%;
+                position: absolute;
+                left: 10%;
+                top: 83%;
+                background: rgba(0,0,0,0.91);
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+                transition-duration: 0.5s;
+            }
+            .mondText:hover
+            {
+                background: rgba(131, 179, 91, 0.91);
+            }
+
+            #texts
+            {
+                color: white;
+                margin-top: 15px;
+                font-family:Arial, Helvetica, sans-serif;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .sloganContainer
+            {
+                position: absolute;
+                border: 1px solid rgba(131, 179, 91, 0.91);
+                width: 23%;
+                height: 12%;
+                left: 9%;
+                top: 73%;
+                background: rgba(0,0,0,0.6);
+            }
+
+            /*Darkend background*/
+            .darkBack
+            {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.75);
+                z-index: -1;
+                opacity: 0;
+            }
+            @keyframes fadeUp
+            {
+                to
+                {
+                    z-index: 10;
+                }
+            }
+            .fade-up
+            {
+                z-index: 1;
+                animation: "fadeUp 1s ease-out forwards";
+            }
+            /* Keqing */
+            .columnOne
+            {
+                background-position: center;
+                background-color: black;
+                background-image: url('https://images.alphacoders.com/111/1111562.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 1;
+                position: absolute;
+                width: 20%;
+                height: 100%;
+                right: 40%;
+                border: 1px solid rgb(0, 0, 0);
+                transition-duration: 1s;
+            }
+            .columnOne:hover
+            {
+                background-image: url('https://images.alphacoders.com/112/1123761.jpg');
+                width: 40%;
+                height: 100%;
+                opacity: 1;
+                z-index: 2;
+                border: 1px solid black;
+            }
+            /* Map */
+            .columnTwo
+            {
+                background-position: center;
+                background-image: url('https://preview.redd.it/2q2u3efmxb081.png?width=1000&format=png&auto=webp&s=78d93da5f71c5af4871c644459bfe6c0cf1864ad');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                width: 20%;
+                z-index: 1;
+                height: 100%;
+                right: 20%;
+                border: 1px solid rgb(0, 0, 0);
+                transition-duration: 1s;
+            }
+            .columnTwo:hover
+            {
+                background-image: url('https://img.gamewith.net/img/original_cb1cfb042286e069b1a4fa57600bc728.jpg');
+                width: 40%;
+                z-index: 2;
+                height: 100%;
+                border: 1px solid black;
+            }
+
+            /* Bosses */
+            .columnThree
+            {
+                background-position: center;
+                background-image: url('https://cdnb.artstation.com/p/assets/images/images/036/683/343/large/judah-carvalho-andrius-collab-genshin-final-1.jpg?1618339340');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                width: 20%;
+                height: 100%;
+                right: 0%;
+                z-index: 1;
+                border: 1px solid rgb(0, 0, 0);
+                transition-duration: 1s;
+            }
+            .columnThree:hover
+            {
+                background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/60ae4980-23d0-4fce-9fe5-7a55a9810bb3/de90les-99e898fe-6acb-4443-8fa3-20b85777978a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYwYWU0OTgwLTIzZDAtNGZjZS05ZmU1LTdhNTVhOTgxMGJiM1wvZGU5MGxlcy05OWU4OThmZS02YWNiLTQ0NDMtOGZhMy0yMGI4NTc3Nzk3OGEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JZxMgvtYnSkJfuzhDq4PsokPS19nbEEYFVh8LiRkpFQ');
+                width: 40%;
+                height: 100%;
+                z-index: 2;
+                border: 1px solid black;
+            }
+            #centerImage
+            {
+                position: absolute;
+                width: 65%;
+                height: 20%;
+                margin-left: 50px;
+                bottom: 5%;
+            }
+            .textContainer
+            {
+                width: 80%;
+                cursor: pointer;
+                opacity: 0;
+                height: 5%;
+                position: absolute;
+                left: 10%;
+                top: 44%;
+                background: rgba(0,0,0,0.91);
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+                transition-duration: 0.5s;
+            }
+            .textContainer:hover
+            {
+                background: rgba(134, 18, 18, 0.93);
+            }
+
+            .textContainerTwo
+            {
+                width: 80%;
+                opacity: 0;
+                cursor: pointer;
+                height: 5%;
+                position: absolute;
+                left: 10%;
+                top: 44%;
+                background: rgba(0,0,0,0.91);
+                border-left: 1px solid white;
+                transition-duration: 0.5s;
+            }
+            .textContainerTwo:hover
+            {
+                background: rgba(36, 136, 44, 0.93);
+            }
+
+            .textContainerThree
+            {
+                width: 80%;
+                cursor: pointer;
+                opacity: 0;
+                height: 5%;
+                position: absolute;
+                left: 10%;
+                top: 44%;
+                background: rgba(0,0,0,0.91);
+                border-left: 1px solid white;
+                transition-duration: 0.5s;
+            }
+            .textContainerThree:hover
+            {
+                background: rgba(34, 108, 138, 0.93);
+            }
+            .paragraph
+            {
+                font-size: 30px;
+            }
+
+            #text
+            {
+                margin: 7px;
+                text-align: center; 
+                font-size: 30px; 
+                color: white;
+            }
+
+            @media screen and (max-width: 1600px)
+            {
+                .sloganContainer
+                {
+                    height: 21%;
+                }
+                .paragraph
+                {
+                    margin-top: 8px;
+                    font-size: 25px;
+                }
+            }
+            @media screen and (max-height: 830px)
+            {
+                #text
+                {
+                    margin-top: 2px;
+                }
+            }
+            @media screen and (max-width: 1140px)
+            {
+                .sloganContainer
+                {
+                    height: 24%;
+                }
+                .paragraph
+                {
+                    font-size: 20px;
+                    margin-top: 11px;
+                }
+                .containText
+                {
+                    font-size: 12px;
+                }
+                #text
+                {
+                    margin-top: 2px;
+                }
+            }
+            
+            @media screen and (max-width: 990px)
+            {
+                .sloganContainer
+                {
+                    height: 28%;
+                }
+                #text
+                {
+                    font-size: 20px;
+                    margin-top: 7px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="splash0">
+        </div>
+        <div class="darkBack">
+
+        </div>
+        <div class="background">
+            <div class="containerNavigation">
+                <div class="contain" id="contain1">
+                    <img 
+                        src='https://drive.google.com/u/1/uc?id=1tO25hMwHsI8IxbJ9V9vRvCTKWMLOJygG&export=download' 
+                        id="image1" 
+                        class="btnImage"
+                    >
+                    <p class="containText">Continue to Story Quest</p>
+                </div>
+                <div class="contain" id="contain2">
+                    <img 
+                        src='https://drive.google.com/u/1/uc?id=1tO25hMwHsI8IxbJ9V9vRvCTKWMLOJygG&export=download' 
+                        id="image2" 
+                        class="btnImage2"
+                    >
+                    <p class="containText">Check current / previous events</p>
+                </div>
+                <div class="contain" id="contain3">
+                    <img 
+                        src='https://drive.google.com/u/1/uc?id=1tO25hMwHsI8IxbJ9V9vRvCTKWMLOJygG&export=download' 
+                        id="image3" 
+                        class="btnImage3"
+                    >
+                    <p class="containText">Blank</p>
+                </div>
+            </div>
+            <div class="mondImageBackgroundSlide">
+
+            </div>
+            <div class="mondImage">
+                <div class="mondText">
+                    <p id="texts">Mondstat</p>
+                </div>
+            </div>
+            <div class="sloganContainer">
+                <p style="margin: 10px;text-align:center;">
+                    <b style="color: white">"</b>An Isolated Archipelago Far East of Teyvat
+                    Overcome endless thunderstorms and set foot on the islands of red maple and cherry blossoms. 
+                    On winding shores and towering cliffs, and in forests and mountains full of secrets, 
+                    witness the Eternity pursued by Her Excellency, the Almighty Narukami Ogosho.<b style="color: white">"</b>
+                </p>
+            </div>
+            <div class="columnOne">
+                <div class="textContainer">
+                    <p id="text">Characters</p>
+                </div>
+            </div>
+            <div class="columnTwo">
+                <div class="textContainerTwo" id="two">
+                    <p id="text">Map</p>
+                </div>
+            </div>
+            <div class="columnThree">
+                <div class="textContainerThree" id="three">
+                    <p id="text">Bosses</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="splash.js"></script>
+    <script src="mouseOver.js"></script>
+</html>
