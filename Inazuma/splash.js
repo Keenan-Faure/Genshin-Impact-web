@@ -18,7 +18,7 @@ window.addEventListener('load', (event) =>
     //creates splashText
     var SplashText = document.createElement('p');
     SplashText.className = "splashText";
-    var text = document.createTextNode("The City of Freedom");
+    var text = document.createTextNode("What is Eternity?");
     SplashText.appendChild(text);
     Splash1.appendChild(SplashText);
 
