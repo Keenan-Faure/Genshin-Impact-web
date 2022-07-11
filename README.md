@@ -12,5 +12,8 @@ What information does it give me about the game?
 - The real webpage for the game can be found here: https://genshin.hoyoverse.com/en/
 - The game can be downloaded here: https://genshin.hoyoverse.com/en/
 
+Most wallpapers were found on WallPaperAbyss. Please visit their great website!
+
+https://wall.alphacoders.com
 
 Thanks for reading! 
